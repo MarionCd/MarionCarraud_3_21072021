@@ -1,0 +1,21 @@
+
+.localisation{
+    background-color: $background-block;
+    border-top: 3px solid $title-border;
+    margin-top:25px;
+    text-align: center;
+    &__recherche{
+        background-color:$title-block;
+        padding:10px;    
+    }
+    &__description{
+        padding:15px 10px;
+    }
+    &--titre{
+        font-weight: bold;
+        font-size:22px;
+    }
+    &--argument, &--titre{
+        padding-bottom:15px;
+    }
+}

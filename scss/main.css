@@ -1,0 +1,51 @@
+header img {
+  display: block;
+  margin: 25px auto auto auto;
+}
+
+.localisation {
+  background-color: #F6F6F6;
+  border-top: 3px solid #E3E3E3;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.localisation__recherche {
+  background-color: #EAEAEA;
+  padding: 10px;
+}
+
+.localisation__description {
+  padding: 15px 10px;
+}
+
+.localisation--titre {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.localisation--argument, .localisation--titre {
+  padding-bottom: 15px;
+}
+
+@font-face {
+  font-family: "shrikhand";
+  src: url("../shrikhand/Shrikhand-Regular.ttf");
+  font-family: "roboto";
+  src: url("../roboto/Roboto-Regular.ttf");
+}
+
+body {
+  color: #353535;
+  font-family: roboto, sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'shrikhand', sans-serif;
+}
+
+.argument {
+  font-weight: bold;
+  font-size: 22px;
+}
+/*# sourceMappingURL=main.css.map */

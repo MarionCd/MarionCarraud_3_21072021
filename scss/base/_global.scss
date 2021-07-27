@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "shrikhand"; src: url('../shrikhand/Shrikhand-Regular.ttf'); 
+    font-family: "roboto"; src: url('../roboto/Roboto-Regular.ttf');
+}
+
+
+body{
+    color:$main-color;
+    font-family: roboto, sans-serif;
+    
+}
+
+h1, h2, h3, h4 {
+    
+    font-family:'shrikhand', sans-serif;
+}
+
+.argument{
+    font-weight: bold;
+    font-size:22px;
+
+
+}
