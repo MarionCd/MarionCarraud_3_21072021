@@ -1,0 +1,66 @@
+.restaurants{
+    background-color: $background-block;
+    padding:15px 10px;
+   
+    &__titre{
+        font-weight: bold;
+        font-size:22px;
+        margin-bottom: 25px;
+    }
+
+    &__carte{
+        margin-bottom: 25px;
+    }
+    &--vignette{
+        background-size:cover;
+        background-position: center center;
+        height:170px;
+        border-top-right-radius: 25px;
+        border-top-left-radius: 25px;
+        text-align:right;
+        padding-top:25px;
+    }
+
+    &--nouveau{
+        background-color:$tertiary-color;
+        padding:5px;
+        text-align:right;
+        margin-right:10px;
+    }
+
+
+    &--image1{
+        background-image: url('../Maquettes Ohmyfood/images/restaurants/la-palette-du-gout.jpg');
+    }
+    &--image2{
+        background-image: url('../Maquettes Ohmyfood/images/restaurants/la-note-enchantee.jpg');
+    }
+    &--image3{
+        background-image: url('../Maquettes Ohmyfood/images/restaurants/a-la-francaise.jpg');
+    }
+    &--image4{
+        background-image: url('../Maquettes Ohmyfood/images/restaurants/le-delice-des-sens.jpg');
+    }
+    &--legende{
+        background-color:#fff;
+        height:55px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+        padding:12px 20px 12px 12px;
+
+        i{
+            font-size:30px;
+        }
+    }
+
+    &--titre-legende{
+        font-weight:bold;
+    }
+    &--sstitre{
+        font-weight:500;
+        padding-top:6px;
+    }
+}

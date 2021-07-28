@@ -1,6 +1,36 @@
 header img {
   display: block;
   margin: 25px auto auto auto;
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  background-color: #353535;
+  color: #fff;
+  padding-left: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+footer ul li {
+  list-style-type: none;
+  margin-bottom: 8px;
+}
+
+footer ul li:nth-child(1):before, footer ul li:nth-child(2):before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+footer ul li:nth-child(1):before {
+  content: "\f2e7";
+  margin-right: 15px;
+}
+
+footer ul li:nth-child(2):before {
+  content: "\f4c4";
+  margin-right: 8px;
 }
 
 .localisation {
@@ -28,6 +58,129 @@ header img {
   padding-bottom: 15px;
 }
 
+.localisation--explorer {
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  padding: 15px;
+  margin-bottom: 35px;
+  border-radius: 25px;
+  color: #fff;
+  font-family: 'roboto', sans-serif;
+  border: none;
+}
+
+.fonctionnement {
+  padding: 15px 10px;
+}
+
+.fonctionnement__titre {
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.fonctionnement__liste {
+  background-color: #F6F6F6;
+  border-radius: 25px;
+  margin-bottom: 15px;
+  padding: 30px;
+  -webkit-box-shadow: 0px 0px 20px -10px #9B9898;
+          box-shadow: 0px 0px 20px -10px #9B9898;
+}
+
+.fonctionnement__liste i {
+  margin-right: 30px;
+  color: #7E7E7E;
+}
+
+.fonctionnement--numero {
+  background-color: #9356DC;
+  border-radius: 100%;
+  padding: 3px 8px;
+  position: absolute;
+  left: 8px;
+  color: #fff;
+}
+
+.restaurants {
+  background-color: #F6F6F6;
+  padding: 15px 10px;
+}
+
+.restaurants__titre {
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.restaurants__carte {
+  margin-bottom: 25px;
+}
+
+.restaurants--vignette {
+  background-size: cover;
+  background-position: center center;
+  height: 170px;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  text-align: right;
+  padding-top: 25px;
+}
+
+.restaurants--nouveau {
+  background-color: #99E2D0;
+  padding: 5px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.restaurants--image1 {
+  background-image: url("../Maquettes Ohmyfood/images/restaurants/la-palette-du-gout.jpg");
+}
+
+.restaurants--image2 {
+  background-image: url("../Maquettes Ohmyfood/images/restaurants/la-note-enchantee.jpg");
+}
+
+.restaurants--image3 {
+  background-image: url("../Maquettes Ohmyfood/images/restaurants/a-la-francaise.jpg");
+}
+
+.restaurants--image4 {
+  background-image: url("../Maquettes Ohmyfood/images/restaurants/le-delice-des-sens.jpg");
+}
+
+.restaurants--legende {
+  background-color: #fff;
+  height: 55px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 12px 20px 12px 12px;
+}
+
+.restaurants--legende i {
+  font-size: 30px;
+}
+
+.restaurants--titre-legende {
+  font-weight: bold;
+}
+
+.restaurants--sstitre {
+  font-weight: 500;
+  padding-top: 6px;
+}
+
 @font-face {
   font-family: "shrikhand";
   src: url("../shrikhand/Shrikhand-Regular.ttf");
@@ -44,8 +197,8 @@ h1, h2, h3, h4 {
   font-family: 'shrikhand', sans-serif;
 }
 
-.argument {
-  font-weight: bold;
-  font-size: 22px;
+a {
+  text-decoration: none;
+  color: #353535;
 }
 /*# sourceMappingURL=main.css.map */
