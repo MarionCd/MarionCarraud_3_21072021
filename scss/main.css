@@ -1,36 +1,28 @@
+@font-face {
+  font-family: "shrikhand";
+  src: url("../shrikhand/Shrikhand-Regular.ttf");
+  font-family: "roboto";
+  src: url("../roboto/Roboto-Regular.ttf");
+}
+
+body {
+  color: #353535;
+  font-family: roboto, sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'shrikhand', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #353535;
+}
+
 header img {
   display: block;
   margin: 25px auto auto auto;
   width: 100%;
-}
-
-footer {
-  width: 100%;
-  background-color: #353535;
-  color: #fff;
-  padding-left: 5px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
-footer ul li {
-  list-style-type: none;
-  margin-bottom: 8px;
-}
-
-footer ul li:nth-child(1):before, footer ul li:nth-child(2):before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-}
-
-footer ul li:nth-child(1):before {
-  content: "\f2e7";
-  margin-right: 15px;
-}
-
-footer ul li:nth-child(2):before {
-  content: "\f4c4";
-  margin-right: 8px;
 }
 
 .localisation {
@@ -52,6 +44,7 @@ footer ul li:nth-child(2):before {
 .localisation--titre {
   font-weight: bold;
   font-size: 22px;
+  margin-bottom: 25px;
 }
 
 .localisation--argument, .localisation--titre {
@@ -67,6 +60,14 @@ footer ul li:nth-child(2):before {
   color: #fff;
   font-family: 'roboto', sans-serif;
   border: none;
+  cursor: pointer;
+}
+
+.localisation--explorer:hover {
+  -webkit-transition-duration: 2000ms;
+          transition-duration: 2000ms;
+  background: -webkit-gradient(linear, left top, right bottom, from(#fface8), to(#ae80e5));
+  background: linear-gradient(to bottom right, #fface8, #ae80e5);
 }
 
 .fonctionnement {
@@ -115,6 +116,9 @@ footer ul li:nth-child(2):before {
 
 .restaurants__carte {
   margin-bottom: 25px;
+  -webkit-box-shadow: 0px 0px 20px -10px #9B9898;
+          box-shadow: 0px 0px 20px -10px #9B9898;
+  border-radius: 25px;
 }
 
 .restaurants--vignette {
@@ -181,24 +185,144 @@ footer ul li:nth-child(2):before {
   padding-top: 6px;
 }
 
-@font-face {
-  font-family: "shrikhand";
-  src: url("../shrikhand/Shrikhand-Regular.ttf");
-  font-family: "roboto";
-  src: url("../roboto/Roboto-Regular.ttf");
+.retour-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 15px 10px 5px 10px;
 }
 
-body {
-  color: #353535;
-  font-family: roboto, sans-serif;
+.retour-menu a {
+  width: 30%;
+  font-size: 22px;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'shrikhand', sans-serif;
+.retour-menu__logo {
+  background-image: url("../Maquettes Ohmyfood/images/logo/ohmyfood.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 40%;
 }
 
-a {
-  text-decoration: none;
-  color: #353535;
+.banniere-menu {
+  height: 270px;
+  margin-top: -50px;
+}
+
+.banniere-menu__image1 {
+  background-image: url("../Maquettes Ohmyfood/images/restaurants/la-palette-du-gout.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 100%;
+}
+
+.menu-entier {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.menu-entier__titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.menu-entier__titre i {
+  font-size: 28px;
+  margin-top: 22px;
+}
+
+.menu-entier__sstitre {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.menu-entier__sstitre:after {
+  content: '';
+  height: 2px;
+  width: 50px;
+  background-color: #99E2D0;
+  display: block;
+}
+
+.menu-entier--legende {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu-entier--bloc {
+  padding: 15px;
+}
+
+.menu-entier--bouton {
+  text-align: center;
+}
+
+.menu-entier--commander {
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  padding: 15px;
+  margin-bottom: 35px;
+  border-radius: 25px;
+  color: #fff;
+  font-family: 'roboto', sans-serif;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-entier--commander:hover {
+  -webkit-transition-duration: 2000ms;
+          transition-duration: 2000ms;
+  background: -webkit-gradient(linear, left top, right bottom, from(#fface8), to(#ae80e5));
+  background: linear-gradient(to bottom right, #fface8, #ae80e5);
+}
+
+footer {
+  width: 100%;
+  background-color: #353535;
+  color: #fff;
+  padding-left: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+footer ul li {
+  list-style-type: none;
+  margin-bottom: 8px;
+}
+
+footer ul li:nth-child(1):before, footer ul li:nth-child(2):before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+footer ul li:nth-child(1):before {
+  content: "\f2e7";
+  margin-right: 15px;
+}
+
+footer ul li:nth-child(2):before {
+  content: "\f4c4";
+  margin-right: 8px;
+}
+
+footer a {
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */

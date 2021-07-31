@@ -1,7 +1,9 @@
-@import "./utils/variables/variables";
+@import "./utils/variables";
+@import "./base/global";
+@import "./utils/mixins";
 @import "./layout/header";
-@import "./layout/footer";
 @import "./layout/recherche";
 @import "./layout/fonctionnement";
 @import "./layout/restaurants";
-@import "./base/global";
+@import "./layout/menus";
+@import "./layout/footer";

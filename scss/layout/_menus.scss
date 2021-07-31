@@ -1,0 +1,72 @@
+.retour-menu{
+    display:flex;
+    flex-direction: row;
+    padding:15px 10px 5px 10px;
+    a{
+        width:30%;
+        font-size:22px;
+    }
+    &__logo{
+        background-image: url('../Maquettes Ohmyfood/images/logo/ohmyfood.png');
+        background-size:contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width:40%;
+    }
+}
+
+.banniere-menu{
+    height:270px;
+    margin-top:-50px;
+    &__image1{
+        background-image: url('../Maquettes\ Ohmyfood/images/restaurants/la-palette-du-gout.jpg');
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding-top:100%;
+    }
+
+}
+
+.menu-entier{
+    @include bord-haut-rond;
+    &__titre{
+        display:flex;
+        justify-content: space-around;
+        i{
+            font-size:28px;
+            margin-top:22px;
+        }
+    }
+    &__sstitre{
+        text-transform: uppercase;
+        margin-bottom:10px;
+        &:after{
+            content:'';
+            height:2px;
+            width:50px;
+            background-color:$tertiary-color;
+            display:block;
+        }
+    }
+    &--legende{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &--bloc{
+        padding:15px;
+    }
+    &--bouton{
+        text-align:center;
+        
+    }
+    &--commander{
+        @include bouton-rose;
+
+        &:hover{
+            @include hover;
+        }
+        
+    }
+}
