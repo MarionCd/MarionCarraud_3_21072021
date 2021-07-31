@@ -9,71 +9,61 @@
     </head>
 
     <body>
-        <header> 
-            <img src="Maquettes Ohmyfood\images\logo\ohmyfood.png" alt="Oh my food"></img>
+        <header class="retour-menu">
+            <a href="./index.html"><i class="fas fa-arrow-left"></i></a>
+            <div class="retour-menu__logo"></div>
         </header>
-        <section class="localisation">
-            <div class="localisation__recherche">
-                <i class="fas fa-map-marker-alt"></i><span> Paris, Belleville</span>
-            </div>
-            <div class="localisation__description">
-                <div class="localisation--titre">Réservez le menu qui<br/> vous convient</div>
-                <div class="localisation--argument">Découvrez des restaurants d'exception,<br/> sélectionnez par nos soins.</div>
-                <a href="#"><button class="localisation--explorer">Explorer nos restaurants</button></a>
 
-            </div>
+        <section class="banniere-menu">
+            <div class="banniere-menu__image1"></div>
         </section>
-        <section class="fonctionnement">
-            <div class="fonctionnement__titre">Fonctionnement</div>
-            <div class="fonctionnement__plan">
-                <div class="fonctionnement__liste"><span class="fonctionnement--numero">1</span><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</div>
-                <div class="fonctionnement__liste"><span class="fonctionnement--numero">2</span><i class="fas fa-list-ul"></i>Composez votre menu</div>
-                <div class="fonctionnement__liste"><span class="fonctionnement--numero">3</span><i class="fas fa-store"></i>Dégustez au restaurant</div>
+        
+        <section class="restaurants menu-entier">
+            <div class="menu-entier__titre">
+                <h1>Le délice des sens</h1>
+                <i class="far fa-heart"></i>
+            </div>
+            <div class="menu-entier__sstitre">ENTRÉES</div>
+            <div class="fonctionnement__plan restaurants_legende">
+                <div class="fonctionnement__liste restaurants--titre-legende menu-entier--bloc">Tartare de thon
+                    <div class="restaurants--sstitre menu-entier--legende"><span>Assaisonné au yuzu</span><span>25€</span></div>
+                </div>
+                <div class="fonctionnement__liste restaurants--titre-legende menu-entier--bloc">Bouchée de homard croustillant
+                    <div class="restaurants--sstitre menu-entier--legende"><span>Et sa farandole de petits légumes</span><span>35€</span></div>
+                </div>
+                <div class="fonctionnement__liste restaurants--titre-legende menu-entier--bloc">Velouté de cèpes
+                    <div class="restaurants--sstitre menu-entier--legende"><span>Aux truffes </span><span>20€</span></div>
+                </div>
             </div>
 
-        </section>
-        <section class="restaurants">
-            <div class="restaurants__titre">Restaurants</div>
-            <a href="#"><div class="restaurants__carte">
-                <div class="restaurants--vignette restaurants--image1"><span class="restaurants--nouveau">Nouveau</span></div>
-                <div class="restaurants--legende">
-                    <div class="restaurants--titre-legende">La palette du goût
-                        <div class="restaurants--sstitre">Ménilmontant</div>
-                    </div>
-                    <i class="far fa-heart"></i>
+            <div class="menu-entier__sstitre">PLATS</div>
+            <div class="fonctionnement__plan restaurants_legende">
+                <div class="fonctionnement__liste restaurants--titre-legende menu-entier--bloc">Poulet rôti aux herbes de provence
+                    <div class="restaurants--sstitre menu-entier--legende"><span>Et sa crème de truffe</span><span>40€</span></div>
                 </div>
-            </div></a>
-            
-            <a href="#"><div class="restaurants__carte">
-                <div class="restaurants--vignette restaurants--image2"><span class="restaurants--nouveau">Nouveau</span></div>
-                <div class="restaurants--legende">
-                    <div class="restaurants--titre-legende">La note enchantée
-                        <div class="restaurants--sstitre">Charonne</div>
-                    </div>
-                    <i class="far fa-heart"></i>
+                <div class="fonctionnement__liste restaurants--titre-legende menu-entier--bloc">Langouste rôtie
+                    <div class="restaurants--sstitre menu-entier--legende"><span>Et ses légumes de saison</span><span>35€</span></div>
                 </div>
-            </div></a>
+                <div class="fonctionnement__liste restaurants--titre-legende menu-entier--bloc">Côte de boeuf angus
+                    <div class="restaurants--sstitre menu-entier--legende"><span>Et sa purée de panais</span><span>44€</span></div>
+                </div>
+            </div>
 
-            <a href="#"><div class="restaurants__carte">
-                <div class="restaurants--vignette restaurants--image3"></div>
-                <div class="restaurants--legende">
-                    <div class="restaurants--titre-legende">À la française
-                        <div class="restaurants--sstitre">Cité Rouge</div>
-                    </div>
-                    <i class="far fa-heart"></i>
+            <div class="menu-entier__sstitre">DESSERTS</div>
+            <div class="fonctionnement__plan restaurants_legende">
+                <div class="fonctionnement__liste restaurants--titre-legende menu-entier--bloc">Farandole de desserts
+                    <div class="restaurants--sstitre menu-entier--legende"><span>Du chef</span><span>18€</span></div>
                 </div>
-            </div></a>
-
-            <a href="#"><div class="restaurants__carte">
-                <div class="restaurants--vignette restaurants--image4"></div>
-                <div class="restaurants--legende">
-                    <div class="restaurants--titre-legende">Le délice des sens
-                        <div class="restaurants--sstitre">Folie-Méricourt</div>
-                    </div>
-                    <i class="far fa-heart"></i>
+                <div class="fonctionnement__liste restaurants--titre-legende menu-entier--bloc">Crème brûlée
+                    <div class="restaurants--sstitre menu-entier--legende"><span>Revisitée</span><span>22€</span></div>
                 </div>
-            </div></a>
-
+                <div class="fonctionnement__liste restaurants--titre-legende menu-entier--bloc">Tiramisu
+                    <div class="restaurants--sstitre menu-entier--legende"><span>À la noisette</span><span>23€</span></div>
+                </div>
+            </div>
+            <div class="menu-entier--bouton">
+                <a href="#"><button class="menu-entier--commander">Commander</button></a>
+            </div>
         </section>
 
         <footer>

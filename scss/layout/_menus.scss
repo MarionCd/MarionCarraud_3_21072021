@@ -61,12 +61,5 @@
         text-align:center;
         
     }
-    &--commander{
-        @include bouton-rose;
-
-        &:hover{
-            @include hover;
-        }
-        
-    }
+   
 }

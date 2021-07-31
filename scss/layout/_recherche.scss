@@ -17,12 +17,5 @@
     &--argument, &--titre{
         padding-bottom:15px;
     }
-    &--explorer{
-        @include bouton-rose;
-
-            &:hover{
-                @include hover;
-            }
     
-    }
 }

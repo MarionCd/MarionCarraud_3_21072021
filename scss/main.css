@@ -19,6 +19,47 @@ a {
   color: #353535;
 }
 
+button {
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  position: relative;
+  z-index: 100;
+  padding: 15px;
+  margin-bottom: 35px;
+  border-radius: 25px;
+  color: #fff;
+  font-family: 'roboto', sans-serif;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 0px 10px 1px #9B9898;
+          box-shadow: 0px 0px 10px 1px #9B9898;
+}
+
+button:before {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#fface8), to(#ae80e5));
+  background-image: linear-gradient(to bottom right, #fface8, #ae80e5);
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  z-index: -100;
+  -webkit-transition: all 2000ms;
+  transition: all 2000ms;
+  border-radius: 25px;
+}
+
+button:hover:before {
+  opacity: 1;
+  -webkit-box-shadow: 0px 0px 10px 2px #979797;
+          box-shadow: 0px 0px 10px 2px #979797;
+}
+
 header img {
   display: block;
   margin: 25px auto auto auto;
@@ -49,25 +90,6 @@ header img {
 
 .localisation--argument, .localisation--titre {
   padding-bottom: 15px;
-}
-
-.localisation--explorer {
-  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  padding: 15px;
-  margin-bottom: 35px;
-  border-radius: 25px;
-  color: #fff;
-  font-family: 'roboto', sans-serif;
-  border: none;
-  cursor: pointer;
-}
-
-.localisation--explorer:hover {
-  -webkit-transition-duration: 2000ms;
-          transition-duration: 2000ms;
-  background: -webkit-gradient(linear, left top, right bottom, from(#fface8), to(#ae80e5));
-  background: linear-gradient(to bottom right, #fface8, #ae80e5);
 }
 
 .fonctionnement {
@@ -272,25 +294,6 @@ header img {
 
 .menu-entier--bouton {
   text-align: center;
-}
-
-.menu-entier--commander {
-  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  padding: 15px;
-  margin-bottom: 35px;
-  border-radius: 25px;
-  color: #fff;
-  font-family: 'roboto', sans-serif;
-  border: none;
-  cursor: pointer;
-}
-
-.menu-entier--commander:hover {
-  -webkit-transition-duration: 2000ms;
-          transition-duration: 2000ms;
-  background: -webkit-gradient(linear, left top, right bottom, from(#fface8), to(#ae80e5));
-  background: linear-gradient(to bottom right, #fface8, #ae80e5);
 }
 
 footer {

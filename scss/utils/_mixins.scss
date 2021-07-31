@@ -6,15 +6,10 @@
 
 @mixin template-cartes{
     border-radius:25px;
-    box-shadow:  0px 0px 20px -10px #9B9898;
-
+    box-shadow: $shadow;
 }
 
-@mixin hover{
-    transition-duration: 2000ms;
-    background: $background-button-hover;
 
-}
 
 @mixin bord-haut-rond{
     border-top-left-radius: 25px;
@@ -22,8 +17,11 @@
 
 }
 
-@mixin bouton-rose{
-    background:$background-button;
+@mixin bouton-rose($start, $end, $start2, $end2, $transTime){
+    background-size: 100%;
+    background-image: linear-gradient(to bottom right,$start, $end);
+    position: relative;
+    z-index: 100;
     padding:15px;
     margin-bottom:35px;
     border-radius:25px;
@@ -31,4 +29,25 @@
     font-family: 'roboto', sans-serif;
     border:none;
     cursor: pointer;
+    border-radius:25px;
+    box-shadow: $shadow-button;
+    &:before {
+        background-image: linear-gradient(to bottom right,$start2, $end2);
+        content: "";
+        display: block;
+        height: 100%;
+        position: absolute;
+        top: 0; left: 0;
+        opacity: 0;
+        width: 100%;
+        z-index: -100;
+        transition: all $transTime;
+        border-radius:25px;
+    }
+    &:hover {
+        &:before {
+            opacity: 1;
+            box-shadow:0px 0px 10px 2px #979797;
+        }
+    }
 }
