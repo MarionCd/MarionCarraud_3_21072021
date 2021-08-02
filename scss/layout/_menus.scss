@@ -17,13 +17,26 @@
 
 .banniere-menu{
     height:270px;
-    margin-top:-50px;
-    &__image1{
-        background-image: url('../Maquettes\ Ohmyfood/images/restaurants/la-palette-du-gout.jpg');
-        background-size:contain;
+    &__image1, &__image2, &__image3, &__image4{
         background-repeat: no-repeat;
         background-position: center center;
-        padding-top:100%;
+        height:290px;
+    }
+    &__image1, &__image3, &__image4{
+        background-size:contain;
+    }
+    &__image1{
+        background-image: url('../Maquettes\ Ohmyfood/images/restaurants/la-palette-du-gout.jpg');
+    }
+    &__image2{
+        background-image: url('../Maquettes\ Ohmyfood/images/restaurants/la-note-enchantee.jpg');
+        background-size:cover;
+    }
+    &__image3{
+        background-image: url('../Maquettes\ Ohmyfood/images/restaurants/a-la-francaise.jpg');
+    }
+    &__image4{
+        background-image: url('../Maquettes\ Ohmyfood/images/restaurants/le-delice-des-sens.jpg');
     }
 
 }
@@ -43,7 +56,7 @@
         margin-bottom:10px;
         &:after{
             content:'';
-            height:2px;
+            height:3px;
             width:50px;
             background-color:$tertiary-color;
             display:block;
@@ -62,4 +75,8 @@
         
     }
    
+}
+
+.prix{
+    font-weight:bold;
 }

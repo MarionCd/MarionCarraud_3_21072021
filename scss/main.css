@@ -1,3 +1,55 @@
+button {
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  position: relative;
+  z-index: 100;
+  padding: 15px;
+  margin-bottom: 35px;
+  border-radius: 25px;
+  color: #fff;
+  font-family: 'roboto', sans-serif;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 0px 10px 1px #9B9898;
+          box-shadow: 0px 0px 10px 1px #9B9898;
+}
+
+button:before {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#fface8), to(#ae80e5));
+  background-image: linear-gradient(to bottom right, #fface8, #ae80e5);
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  z-index: -100;
+  -webkit-transition: all 2000ms;
+  transition: all 2000ms;
+  border-radius: 25px;
+}
+
+button:hover:before {
+  opacity: 1;
+  -webkit-box-shadow: 0px 0px 10px 2px #979797;
+          box-shadow: 0px 0px 10px 2px #979797;
+}
+
+.fa-heart {
+  -webkit-transition: all 2000ms;
+  transition: all 2000ms;
+}
+
+.fa-heart:hover {
+  color: #FF79DA;
+  cursor: pointer;
+  content: "\f004";
+}
+
 @font-face {
   font-family: "shrikhand";
   src: url("../shrikhand/Shrikhand-Regular.ttf");
@@ -8,6 +60,7 @@
 body {
   color: #353535;
   font-family: roboto, sans-serif;
+  margin: auto;
 }
 
 h1, h2, h3, h4 {
@@ -63,7 +116,7 @@ button:hover:before {
 header img {
   display: block;
   margin: 25px auto auto auto;
-  width: 100%;
+  width: 50%;
 }
 
 .localisation {
@@ -233,15 +286,33 @@ header img {
 
 .banniere-menu {
   height: 270px;
-  margin-top: -50px;
+}
+
+.banniere-menu__image1, .banniere-menu__image2, .banniere-menu__image3, .banniere-menu__image4 {
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 290px;
+}
+
+.banniere-menu__image1, .banniere-menu__image3, .banniere-menu__image4 {
+  background-size: contain;
 }
 
 .banniere-menu__image1 {
   background-image: url("../Maquettes Ohmyfood/images/restaurants/la-palette-du-gout.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  padding-top: 100%;
+}
+
+.banniere-menu__image2 {
+  background-image: url("../Maquettes Ohmyfood/images/restaurants/la-note-enchantee.jpg");
+  background-size: cover;
+}
+
+.banniere-menu__image3 {
+  background-image: url("../Maquettes Ohmyfood/images/restaurants/a-la-francaise.jpg");
+}
+
+.banniere-menu__image4 {
+  background-image: url("../Maquettes Ohmyfood/images/restaurants/le-delice-des-sens.jpg");
 }
 
 .menu-entier {
@@ -269,7 +340,7 @@ header img {
 
 .menu-entier__sstitre:after {
   content: '';
-  height: 2px;
+  height: 3px;
   width: 50px;
   background-color: #99E2D0;
   display: block;
@@ -294,6 +365,10 @@ header img {
 
 .menu-entier--bouton {
   text-align: center;
+}
+
+.prix {
+  font-weight: bold;
 }
 
 footer {
