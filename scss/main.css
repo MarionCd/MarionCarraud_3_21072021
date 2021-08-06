@@ -12,8 +12,8 @@ button {
   border: none;
   cursor: pointer;
   border-radius: 25px;
-  -webkit-box-shadow: 0px 0px 10px 1px #9B9898;
-          box-shadow: 0px 0px 10px 1px #9B9898;
+  -webkit-box-shadow: 0px 5px 8px 2px #D5D5D5;
+          box-shadow: 0px 5px 8px 2px #D5D5D5;
 }
 
 button:before {
@@ -72,30 +72,32 @@ header img {
 
 .localisation {
   background-color: #F6F6F6;
-  border-top: 3px solid #E3E3E3;
-  margin-top: 25px;
+  margin-top: 10px;
   text-align: center;
   margin-right: -8px;
   margin-left: -8px;
 }
 
 .localisation__recherche {
-  background-color: #EAEAEA;
-  padding: 10px;
-}
-
-.localisation__description {
-  padding: 15px 10px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#EAEAEA), color-stop(90%, #EAEAEA), to(#CFCFCF));
+  background-image: linear-gradient(0deg, #EAEAEA, #EAEAEA 90%, #CFCFCF);
+  padding: 17px;
 }
 
 .localisation--titre {
   font-weight: 900;
-  font-size: 22px;
-  margin-bottom: 25px;
+  font-size: 24px;
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
 
-.localisation--argument, .localisation--titre {
-  padding-bottom: 15px;
+.localisation--argument {
+  padding-bottom: 30px;
+  font-weight: 400;
+}
+
+.localisation--explorer {
+  font-size: 16px;
 }
 
 .fonctionnement {
@@ -105,8 +107,7 @@ header img {
 
 .fonctionnement__titre {
   font-weight: 900;
-  font-size: 22px;
-  margin-bottom: 25px;
+  font-size: 24px;
 }
 
 .fonctionnement__liste {
@@ -149,9 +150,9 @@ header img {
 
 .restaurants__titre {
   font-weight: 900;
-  font-size: 22px;
-  margin-bottom: 25px;
+  font-size: 24px;
   margin-left: 20px;
+  margin-top: 55px;
 }
 
 .restaurants__carte {
@@ -339,13 +340,13 @@ header img {
 }
 
 footer {
-  width: 100%;
   background-color: #353535;
   color: #fff;
   padding-left: 5px;
   padding-top: 8px;
   padding-bottom: 8px;
   margin-right: -8px;
+  margin-bottom: -8px;
   margin-left: -8px;
 }
 

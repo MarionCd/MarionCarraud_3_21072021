@@ -1,22 +1,24 @@
 
 .localisation{
     background-color: $background-block;
-    border-top: 3px solid $title-border;
-    margin-top:25px;
+    margin-top:10px;
     text-align: center;
     @include plein-ecran;
     &__recherche{
-        background-color:$title-block;
-        padding:10px;    
-    }
-    &__description{
-        padding:15px 10px;
+        background-image: linear-gradient(0deg, #EAEAEA, #EAEAEA 90%, #CFCFCF);
+        padding:17px;    
     }
     &--titre{
         @include sstitre;
+        padding-top:40px;
+        padding-bottom:20px;
     }
-    &--argument, &--titre{
-        padding-bottom:15px;
+    &--argument{
+        padding-bottom:30px;
+        font-weight: 400;
+    }
+    &--explorer{
+        font-size:16px;
     }
     
 }
