@@ -1,11 +1,13 @@
 $primary-color:  #9356DC;
 $secondary-color:#FF79DA;
 $tertiary-color:#99E2D0;
+$font:roboto, sans-serif;
+$title-font:'shrikhand', sans-serif;
 $background-block:#F6F6F6;
 $title-block:#EAEAEA;
 $title-border:#E3E3E3;
 $main-color: #353535;
-$shadow:0px 0px 20px -10px #9B9898;
+$shadow:0px 3px 10px 3px #EAEAEA;
 $shadow-button:0px 0px 10px 1px #9B9898;
 $background-button: linear-gradient(to bottom right, $secondary-color, $primary-color);
 $color-hover1:lighten($secondary-color,10%);

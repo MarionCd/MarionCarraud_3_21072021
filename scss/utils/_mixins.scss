@@ -1,5 +1,9 @@
+@mixin marge-carte{
+    margin:0px 20px;
+}
+
 @mixin sstitre{
-    font-weight: bold;
+    font-weight: 900;
     font-size:22px;
     margin-bottom: 25px;
 }
@@ -7,6 +11,11 @@
 @mixin template-cartes{
     border-radius:25px;
     box-shadow: $shadow;
+}
+
+@mixin plein-ecran{
+    margin-right:-8px;
+    margin-left:-8px;
 }
 
 

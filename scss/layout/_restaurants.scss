@@ -1,24 +1,24 @@
 .restaurants{
     background-color: $background-block;
     padding:15px 10px;
+    @include plein-ecran;
+    
    
     &__titre{
-        font-weight: bold;
-        font-size:22px;
-        margin-bottom: 25px;
+        @include sstitre;
+        margin-left:20px;
     }
 
     &__carte{
-        margin-bottom: 25px;
-        box-shadow:  0px 0px 20px -10px #9B9898;
-        border-radius: 25px;
+        @include template-cartes;
+        @include marge-carte;
+        margin-bottom: 18px;
     }
     &--vignette{
         background-size:cover;
         background-position: center center;
         height:170px;
-        border-top-right-radius: 25px;
-        border-top-left-radius: 25px;
+        @include bord-haut-rond;
         text-align:right;
         padding-top:25px;
     }
@@ -28,6 +28,7 @@
         padding:5px;
         text-align:right;
         margin-right:10px;
+        color:darken($color:$tertiary-color, $amount:45%)
     }
 
 

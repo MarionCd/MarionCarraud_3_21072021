@@ -4,6 +4,7 @@
     border-top: 3px solid $title-border;
     margin-top:25px;
     text-align: center;
+    @include plein-ecran;
     &__recherche{
         background-color:$title-block;
         padding:10px;    
