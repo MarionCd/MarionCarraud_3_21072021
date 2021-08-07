@@ -5,20 +5,38 @@
     text-align: center;
     @include plein-ecran;
     &__recherche{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         background-image: linear-gradient(0deg, #EAEAEA, #EAEAEA 90%, #CFCFCF);
-        padding:17px;    
+        padding:15px;    
+        & div:nth-child(1){
+           width:27%;
+           text-align: right;
+           margin-right:25px;
+        }
+        & div:nth-child(2){
+            font-weight: 500;
+        }
+    
     }
     &--titre{
         @include sstitre;
-        padding-top:40px;
-        padding-bottom:20px;
+        padding-top:38px;
+        padding-bottom:15px;
     }
     &--argument{
         padding-bottom:30px;
-        font-weight: 400;
+        font-weight: 300;
+        font-size:18px;
     }
     &--explorer{
         font-size:16px;
+        font-weight:400;
+    }
+
+    & button{
+        margin-bottom:58px;
     }
     
 }

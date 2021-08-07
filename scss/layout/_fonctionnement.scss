@@ -3,33 +3,48 @@
     @include marge-carte;
     &__titre{
         @include sstitre;
+        margin-top:30px;
+        font-weight:800;
     }
     &__liste{
         @include template-cartes;
+        display:flex;
+        flex-direction:row;
         background-color: $background-block;
         margin-bottom:23px;
-        padding:30px; 
+        margin-top:30px;
+        padding:24px; 
+        font-weight:600;
+        & div:nth-child(2){
+            width:20%;
+        }
 
         &:hover{
             background-color:lighten($color: $primary-color, $amount: 35%);
+            transition-duration: 1000ms;
         
             i{
                 color:$primary-color;
+                transition-duration: 1000ms;
 
             }
         }
         
         i{
-            margin-right:30px;
             color: #7E7E7E;
+            font-size:20px;
+            margin-left:10px;
+            margin-right:20px;
         }
     }
     &--numero{
         background-color:$primary-color;
         border-radius:100%;
-        padding:3px 8px;
+        padding:7px 9px 4px 9px;
         position:absolute;
-        left:24px;
+        left:13px;
         color:#fff;
+        font-weight: 400;
+        font-size:13px;
     }
 }
