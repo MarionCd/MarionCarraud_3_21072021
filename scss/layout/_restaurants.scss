@@ -2,12 +2,13 @@
     background-color: $background-block;
     padding:15px 10px;
     @include plein-ecran;
-    
    
     &__titre{
         @include sstitre;
         margin-left:20px;
-        margin-top:55px;
+        margin-top:40px;
+        margin-bottom:25px;
+
     }
 
     &__carte{
@@ -18,10 +19,10 @@
     &--vignette{
         background-size:cover;
         background-position: center center;
-        height:170px;
+        height:150px;
         @include bord-haut-rond;
         text-align:right;
-        padding-top:25px;
+        padding-top:19px;
     }
 
     &--nouveau{
@@ -29,18 +30,22 @@
         padding:5px;
         text-align:right;
         margin-right:10px;
-        color:darken($color:$tertiary-color, $amount:45%)
+        color:darken($color:$tertiary-color, $amount:45%);
+        font-weight:500;
     }
 
 
     &--image1{
         background-image: url('../Maquettes Ohmyfood/images/restaurants/la-palette-du-gout.jpg');
+        background-position: 50% 95%;
     }
     &--image2{
         background-image: url('../Maquettes Ohmyfood/images/restaurants/la-note-enchantee.jpg');
+        background-position: 50% 60%;
     }
     &--image3{
         background-image: url('../Maquettes Ohmyfood/images/restaurants/a-la-francaise.jpg');
+        background-position: 50% 100%;
     }
     &--image4{
         background-image: url('../Maquettes Ohmyfood/images/restaurants/le-delice-des-sens.jpg');

@@ -1,10 +1,13 @@
 .fonctionnement{
     padding:15px 10px;
     @include marge-carte;
+    margin-bottom:30px;
+
     &__titre{
         @include sstitre;
-        margin-top:30px;
-        font-weight:800;
+        margin-top:30px;    
+
+       
     }
     &__liste{
         @include template-cartes;
