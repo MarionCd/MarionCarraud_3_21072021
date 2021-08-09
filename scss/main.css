@@ -419,12 +419,23 @@ header img {
   position: relative;
 }
 
-.menu-entier--bloc div:nth-child(1),
-.menu-entier--bloc div:nth-child(2) div:nth-child(1) {
+.menu-entier--bloc + div,
+.menu-entier--bloc .menu-entier--detail {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  width: 90%;
+}
+
+.menu-entier--bloc + div {
+  font-size: 15px;
+}
+
+.menu-entier--detail {
+  font-size: 14px;
+}
+
+.menu-entier--legende {
+  width: 90% !important;
 }
 
 .menu-entier--bouton {
@@ -438,8 +449,9 @@ header img {
 .prix {
   font-weight: bold;
   position: absolute;
-  right: 0;
-  bottom: 10px;
+  right: 12px;
+  bottom: 15px;
+  width: auto !important;
 }
 
 footer {
