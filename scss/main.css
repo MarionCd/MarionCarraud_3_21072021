@@ -311,19 +311,17 @@ header img {
 }
 
 .retour-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding: 15px 10px 5px 10px;
+  position: relative;
+  height: 37px;
 }
 
 .retour-menu a {
-  width: 30%;
-  font-size: 22px;
+  position: absolute;
+  font-size: 18px;
+  margin-right: -8px;
+  margin-left: -8px;
+  top: 50%;
+  left: 20px;
 }
 
 .retour-menu__logo {
@@ -331,11 +329,17 @@ header img {
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
-  width: 40%;
+  width: 45%;
+  position: absolute;
+  top: 50%;
+  height: 100%;
+  left: 27%;
 }
 
 .banniere-menu {
-  height: 270px;
+  height: 232px;
+  margin-right: -8px;
+  margin-left: -8px;
 }
 
 .banniere-menu__image1, .banniere-menu__image2, .banniere-menu__image3, .banniere-menu__image4 {
@@ -368,6 +372,10 @@ header img {
 .menu-entier {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+  margin-right: -8px;
+  margin-left: -8px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .menu-entier__titre {
@@ -383,9 +391,13 @@ header img {
   margin-top: 22px;
 }
 
+.menu-entier__titre h1 {
+  font-size: 26px;
+  color: #000;
+}
+
 .menu-entier__sstitre {
   text-transform: uppercase;
-  margin-bottom: 10px;
 }
 
 .menu-entier__sstitre:after {
@@ -394,31 +406,40 @@ header img {
   width: 50px;
   background-color: #99E2D0;
   display: block;
-}
-
-.menu-entier--legende {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  margin-top: 5px;
 }
 
 .menu-entier--bloc {
   padding: 15px;
+  background-color: #fff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.menu-entier--bloc div:nth-child(1),
+.menu-entier--bloc div:nth-child(2) div:nth-child(1) {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 90%;
 }
 
 .menu-entier--bouton {
   text-align: center;
 }
 
+.menu-entier__liste {
+  margin-top: -12px;
+}
+
 .prix {
   font-weight: bold;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
 }
 
 footer {

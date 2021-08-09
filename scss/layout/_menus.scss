@@ -1,22 +1,30 @@
 .retour-menu{
-    display:flex;
-    flex-direction: row;
-    padding:15px 10px 5px 10px;
+    position:relative;
+    height:37px;
     a{
-        width:30%;
-        font-size:22px;
+        position:absolute;
+        font-size:18px;
+        @include plein-ecran;
+        top:50%;
+        left:20px;
     }
+
     &__logo{
         background-image: url('../Maquettes Ohmyfood/images/logo/ohmyfood.png');
         background-size:contain;
         background-position: center center;
         background-repeat: no-repeat;
-        width:40%;
+        width:45%;
+        position:absolute;
+        top: 50%;
+        height:100%;
+        left:27%;
     }
 }
 
 .banniere-menu{
-    height:270px;
+    height:232px;
+    @include plein-ecran;
     &__image1, &__image2, &__image3, &__image4{
         background-repeat: no-repeat;
         background-position: center center;
@@ -43,6 +51,9 @@
 
 .menu-entier{
     @include bord-haut-rond;
+    @include plein-ecran;
+    padding-right:20px;
+    padding-left:20px;
     &__titre{
         display:flex;
         justify-content: space-around;
@@ -50,33 +61,51 @@
             font-size:28px;
             margin-top:22px;
         }
+        h1{
+            font-size:26px;
+            color:#000;
+        }
     }
     &__sstitre{
         text-transform: uppercase;
-        margin-bottom:10px;
         &:after{
             content:'';
             height:3px;
             width:50px;
             background-color:$tertiary-color;
             display:block;
+            margin-top:5px;
         }
     }
-    &--legende{
-        display:flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+  
     &--bloc{
         padding:15px;
+        background-color:#fff;
+        flex-direction: column;
+        position:relative;
+        div:nth-child(1),
+        div:nth-child(2) div:nth-child(1){
+            text-overflow: ellipsis;
+            overflow:hidden;
+            white-space: nowrap;
+            width:90%;
+        }
     }
     &--bouton{
         text-align:center;
         
+    }
+    &__liste{
+        margin-top:-12px;
+        
+
     }
    
 }
 
 .prix{
     font-weight:bold;
+    position:absolute;
+    right:0;
+    bottom:10px;
 }
