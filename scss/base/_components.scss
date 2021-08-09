@@ -2,14 +2,32 @@ button{
     @include bouton-rose($secondary-color, $primary-color, $color-hover1, $color-hover2, 2000ms);
 }
 
-.fa-heart{
-    transition: all 2000ms;
-    &:hover{    
-        color:$secondary-color;
-        cursor: pointer;
-        content:"\f004";
-    }
+.like{
+    position:relative;
+        i{
+            @include icone-like; 
+                &:nth-child(1){
+                    background: -webkit-linear-gradient($primary-color, $secondary-color);
+                    background-clip:text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    opacity:0;
+                    font-weight:600;
+                }
+                &:nth-child(2){
+                    font-weight:300;
+                    opacity:1;
+                }
+        }
 }
 
+.like:hover i,
+.like:active i{
 
-
+    &:nth-child(2){
+        opacity:0;
+    }
+    &:nth-child(1){
+        opacity:1;
+    }
+}

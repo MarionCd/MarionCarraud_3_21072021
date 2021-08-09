@@ -38,15 +38,40 @@ button:hover:before {
           box-shadow: 0px 0px 10px 2px #979797;
 }
 
-.fa-heart {
-  -webkit-transition: all 2000ms;
-  transition: all 2000ms;
+.like {
+  position: relative;
 }
 
-.fa-heart:hover {
-  color: #FF79DA;
-  cursor: pointer;
-  content: "\f004";
+.like i {
+  font-size: 30px;
+  position: absolute;
+  -webkit-transition: all 2000ms;
+  transition: all 2000ms;
+  left: -20px;
+}
+
+.like i:nth-child(1) {
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  font-weight: 600;
+}
+
+.like i:nth-child(2) {
+  font-weight: 300;
+  opacity: 1;
+}
+
+.like:hover i:nth-child(2),
+.like:active i:nth-child(2) {
+  opacity: 0;
+}
+
+.like:hover i:nth-child(1),
+.like:active i:nth-child(1) {
+  opacity: 1;
 }
 
 body {
@@ -131,6 +156,10 @@ header img {
   margin-bottom: 30px;
 }
 
+.fonctionnement__plan {
+  position: relative;
+}
+
 .fonctionnement__titre {
   font-weight: 800;
   font-size: 24px;
@@ -153,6 +182,7 @@ header img {
   margin-top: 30px;
   padding: 24px;
   font-weight: 600;
+  margin-right: -8px;
 }
 
 .fonctionnement__liste div:nth-child(2) {
@@ -181,12 +211,12 @@ header img {
 .fonctionnement--numero {
   background-color: #9356DC;
   border-radius: 100%;
-  padding: 7px 9px 4px 9px;
+  padding: 4px 8px 3px 8px;
   position: absolute;
-  left: 13px;
+  left: -11px;
   color: #fff;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .restaurants {
@@ -224,11 +254,12 @@ header img {
 
 .restaurants--nouveau {
   background-color: #99E2D0;
-  padding: 5px;
+  padding: 7px 10px;
   text-align: right;
   margin-right: 10px;
   color: #217460;
-  font-weight: 500;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .restaurants--image1 {
@@ -268,17 +299,15 @@ header img {
   padding: 12px 20px 12px 12px;
 }
 
-.restaurants--legende i {
-  font-size: 30px;
-}
-
 .restaurants--titre-legende {
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 .restaurants--sstitre {
-  font-weight: 500;
+  font-weight: 400;
   padding-top: 6px;
+  font-size: 16.5px;
 }
 
 .retour-menu {

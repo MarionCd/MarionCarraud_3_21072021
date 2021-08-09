@@ -27,11 +27,12 @@
 
     &--nouveau{
         background-color:$tertiary-color;
-        padding:5px;
+        padding:7px 10px;
         text-align:right;
         margin-right:10px;
         color:darken($color:$tertiary-color, $amount:45%);
-        font-weight:500;
+        font-weight:400;
+        font-size:14px;
     }
 
 
@@ -60,16 +61,15 @@
         justify-content: space-between;
         padding:12px 20px 12px 12px;
 
-        i{
-            font-size:30px;
-        }
     }
 
     &--titre-legende{
-        font-weight:bold;
+        font-weight:600;
+        font-size:18px;
     }
     &--sstitre{
-        font-weight:500;
+        font-weight:400;
         padding-top:6px;
+        font-size:16.5px;
     }
 }
