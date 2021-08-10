@@ -77,12 +77,25 @@
             margin-top:5px;
         }
     }
+    &__liste{
+        position:relative;
+        margin-top:-12px;
+    }
   
     &--bloc{
-        padding:15px;
-        background-color:#fff;
+        @include template-cartes;
+        display:flex;
         flex-direction: column;
         position:relative;
+        padding:15px;
+        margin-top:30px;
+        margin-right:-8px;
+        margin-bottom:23px;
+        background-color:#fff;
+        font-weight:600;
+        
+        
+
         + div,
         .menu-entier--detail{
             text-overflow: ellipsis;
@@ -92,6 +105,14 @@
         + div{
             font-size:15px;
         }
+        .prix + div{
+            display:none;
+        }
+        :active .prix + div,
+        :focus .prix + div{
+            display:inline;
+        }
+        
     }
     &--detail{
         font-size:14px;
@@ -103,11 +124,6 @@
         text-align:center;
         
     }
-    &__liste{
-        margin-top:-12px;
-        
-
-    }
    
 }
 
@@ -116,5 +132,18 @@
     position:absolute;
     right:12px;
     bottom:15px;
-    width:auto !important;
+    width:30px;
+    + div{
+        position:absolute;
+        right:0px;
+        bottom:0px;
+        height:100%;
+        width:45px;
+        background-color:$tertiary-color;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        i{
+            color:#fff;
+        }
+    }
 }
