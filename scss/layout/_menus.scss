@@ -93,24 +93,27 @@
         margin-bottom:23px;
         background-color:#fff;
         font-weight:600;
+        cursor: pointer;
+        border-radius:15px;
         
-        
+        :hover .prix + div{
+            display:inline;
+        }
 
-        + div,
+        div:nth-child(1),
         .menu-entier--detail{
             text-overflow: ellipsis;
             overflow:hidden;
             white-space: nowrap;
         }
-        + div{
+        div:nth-child(1){
             font-size:15px;
+        
         }
-        .prix + div{
-            display:none;
-        }
-        :active .prix + div,
-        :focus .prix + div{
-            display:inline;
+           
+        :hover .prix,
+        :active .prix{
+            right:80px;
         }
         
     }
@@ -138,12 +141,20 @@
         right:0px;
         bottom:0px;
         height:100%;
-        width:45px;
+        width:60px;
         background-color:$tertiary-color;
-        border-top-right-radius: 25px;
-        border-bottom-right-radius: 25px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        display:none;
+        
+        
         i{
             color:#fff;
+            font-size:20px;
+            position:absolute;
+            bottom:25px;
+            left:17px;
+            
         }
     }
 }

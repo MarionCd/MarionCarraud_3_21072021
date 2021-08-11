@@ -432,26 +432,28 @@ header img {
   margin-bottom: 23px;
   background-color: #fff;
   font-weight: 600;
+  cursor: pointer;
+  border-radius: 15px;
 }
 
-.menu-entier--bloc + div,
+.menu-entier--bloc :hover .prix + div {
+  display: inline;
+}
+
+.menu-entier--bloc div:nth-child(1),
 .menu-entier--bloc .menu-entier--detail {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
 
-.menu-entier--bloc + div {
+.menu-entier--bloc div:nth-child(1) {
   font-size: 15px;
 }
 
-.menu-entier--bloc .prix + div {
-  display: none;
-}
-
-.menu-entier--bloc :active .prix + div,
-.menu-entier--bloc :focus .prix + div {
-  display: inline;
+.menu-entier--bloc :hover .prix,
+.menu-entier--bloc :active .prix {
+  right: 80px;
 }
 
 .menu-entier--detail {
@@ -479,14 +481,19 @@ header img {
   right: 0px;
   bottom: 0px;
   height: 100%;
-  width: 45px;
+  width: 60px;
   background-color: #99E2D0;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: none;
 }
 
 .prix + div i {
   color: #fff;
+  font-size: 20px;
+  position: absolute;
+  bottom: 25px;
+  left: 17px;
 }
 
 footer {
