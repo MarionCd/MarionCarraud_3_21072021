@@ -4,6 +4,7 @@ button{
 
 .like{
     position:relative;
+   
         i{
             @include icone-like; 
                 &:nth-child(1){
@@ -13,21 +14,13 @@ button{
                     -webkit-text-fill-color: transparent;
                     opacity:0;
                     font-weight:600;
+                    
                 }
                 &:nth-child(2){
                     font-weight:300;
                     opacity:1;
+                    cursor: pointer;
+                    
                 }
         }
-}
-
-.like:hover i,
-.like:active i{
-
-    &:nth-child(2){
-        opacity:0;
-    }
-    &:nth-child(1){
-        opacity:1;
-    }
 }

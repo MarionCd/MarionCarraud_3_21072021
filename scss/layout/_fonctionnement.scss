@@ -1,17 +1,14 @@
+#fonctionnement,
+#restaurants{
+    @include marge-section;
+}
+#restaurants{
+    background-color:$background-block ;
+}
 .fonctionnement{
-    padding:15px 10px;
-    @include marge-carte;
-    margin-bottom:30px;
     &__plan{
         position:relative;
-    }
-
-    &__titre{
-        @include sstitre;
-        margin-top:30px;    
-
-       
-    }
+    }       
     &__liste{
         @include template-cartes;
         display:flex;

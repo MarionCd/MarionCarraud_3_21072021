@@ -1,14 +1,17 @@
-@mixin marge-carte{
-    margin:0px 10px;
+@mixin marge-section{
+    margin:0px -8px 30px -8px;
+    padding:15px 25px;
 }
 
 @mixin sstitre{
     font-weight: 800;
     font-size:24px;
+    margin-top:30px; 
+    margin-bottom:30px;
 }
 
 @mixin template-cartes{
-    border-radius:25px;
+    border-radius:15px;
     box-shadow: $shadow;
 }
 
@@ -20,8 +23,8 @@
 
 
 @mixin bord-haut-rond{
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 
 }
 
@@ -64,5 +67,4 @@
     font-size:30px;
     position:absolute;
     transition:all 2000ms;
-    left:-20px;
 }

@@ -13,7 +13,7 @@
 
     &__carte{
         @include template-cartes;
-        @include marge-carte;
+        
         margin-bottom: 18px;
     }
     &--vignette{
@@ -53,14 +53,20 @@
     }
     &--legende{
         background-color:#fff;
-        height:55px;
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 25px;
         display:flex;
         flex-direction:row;
         justify-content: space-between;
-        padding:12px 20px 12px 12px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        .like{
+            width:20%;
+            right:5px;
+                i{
+                    top:25%;
+                    right:0px;
 
+                }
+        }
     }
 
     &--titre-legende{
@@ -72,4 +78,57 @@
         padding-top:6px;
         font-size:16.5px;
     }
+    &--texte{
+        height:100%;
+        width:80%;
+        padding:10px 5px 10px 10px;
+
+            div:nth-child(1){
+            font-weight:600;
+            font-size:18px;
+            }
+        
+    }
 }
+
+
+@keyframes coeur-plein {
+    0% { opacity: 0 }
+    100% { opacity: 1 }
+}
+@-webkit-keyframes coeur-vide {
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+}
+
+.like:hover i:nth-child(1),
+.like:active i:nth-child(1) {
+    animation-name: coeur-plein;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    -webkit-animation-name: coeur-plein;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+  @keyframes coeur-vide {
+      0% { opacity: 1 }
+      100% { opacity: 0 }
+  }
+
+  @-webkit-keyframes coeur-vide {
+    0% { opacity: 1 }
+    100% { opacity: 0 }
+  }
+  
+  .like:hover i:nth-child(2),
+  .like:active i:nth-child(2) {
+      animation-name: coeur-vide;
+      animation-duration: 3s;
+      animation-fill-mode: forwards;
+      -webkit-animation-name: coeur-vide;
+      -webkit-animation-duration: 3s;
+      -webkit-animation-fill-mode: forwards;
+  }
+ 
+ 
