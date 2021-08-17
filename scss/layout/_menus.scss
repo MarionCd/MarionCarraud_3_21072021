@@ -95,6 +95,9 @@
     cursor: pointer;
     border-radius:15px;
     transition: all 2000ms;
+        &:hover .menu-entier--texte{
+            width:70%;
+        }
         &:hover .menu-entier--coche,
         &:active .menu-entier--coche{
             width:30%;

@@ -517,6 +517,10 @@ header img {
   transition: all 2000ms;
 }
 
+.menu-entier--bloc:hover .menu-entier--texte {
+  width: 70%;
+}
+
 .menu-entier--bloc:hover .menu-entier--coche,
 .menu-entier--bloc:active .menu-entier--coche {
   width: 30%;
