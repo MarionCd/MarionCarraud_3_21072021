@@ -514,31 +514,10 @@ header img {
   background-color: #fff;
   cursor: pointer;
   border-radius: 15px;
-  -webkit-transition: all 2000ms;
-  transition: all 2000ms;
-}
-
-.menu-entier--bloc:hover .menu-entier--texte {
-  width: 70%;
-}
-
-.menu-entier--bloc:hover .menu-entier--coche,
-.menu-entier--bloc:active .menu-entier--coche {
-  width: 25%;
-}
-
-.menu-entier--bloc:hover .menu-entier--coche div:nth-child(2),
-.menu-entier--bloc:active .menu-entier--coche div:nth-child(2) {
-  display: inline-block;
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-  background-color: #99E2D0;
 }
 
 .menu-entier--texte {
   width: 80%;
-  -webkit-transition: all 2000ms;
-  transition: all 2000ms;
 }
 
 .menu-entier--texte div:nth-child(1),
@@ -567,8 +546,6 @@ header img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-transition: all 2000ms;
-  transition: all 2000ms;
   position: absolute;
   text-align: center;
   right: 0;
@@ -582,33 +559,46 @@ header img {
 }
 
 .menu-entier--coche div:nth-child(2) {
-  display: none;
+  display: inline-block;
+  background-color: #99E2D0;
   width: 100%;
   color: #fff;
   font-size: 30px;
   padding-top: 15px;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
-  -webkit-transition: background-color 1000ms linear;
-  transition: background-color 1000ms linear;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
 }
 
 .menu-entier--bouton {
   text-align: center;
 }
 
-.menu-entier--coche div:nth-child(2) i {
+.menu-entier--coche i {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
-  -webkit-transition: all 2000ms;
-  transition: all 2000ms;
+  -webkit-transition: all 1000ms;
+  transition: all 1000ms;
 }
 
-.menu-entier--bloc:hover div:nth-child(2) i {
-  -webkit-transform: rotate(110deg);
-          transform: rotate(110deg);
+.menu-entier--bloc:hover i,
+.menu-entier--bloc:active i {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.menu-entier--coche div:nth-child(2) {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: all 900ms;
+  transition: all 900ms;
+}
+
+.menu-entier--bloc:hover .menu-entier--coche div:nth-child(2),
+.menu-entier--bloc:active .menu-entier--coche div:nth-child(2) {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 footer {

@@ -95,27 +95,10 @@
     background-color:#fff;
     cursor: pointer;
     border-radius:15px;
-    transition: all 2000ms;
-        &:hover .menu-entier--texte{
-            width:70%;
-        }
-        &:hover .menu-entier--coche,
-        &:active .menu-entier--coche{
-            width:25%;
-                div:nth-child(2){
-                    display:inline-block;
-                    transform:scaleX(1);
-                    background-color:$tertiary-color;
-
-    
-
-                }
-        }
-        
+     
    }
    &--texte{
     width:80%;
-    transition:all 2000ms;
         div:nth-child(1),
         div:nth-child(2){
             text-overflow: ellipsis;
@@ -136,7 +119,6 @@
     width:20%;
     display:flex;
     flex-direction:row;
-    transition: all 2000ms;
     position:absolute;
     text-align:center;
     right:0;
@@ -149,39 +131,41 @@
         }
 
         div:nth-child(2){
-            display:none;
+            display:inline-block;
+            background-color:$tertiary-color;
             width:100%;
             color:#fff;
             font-size:30px;
             padding-top:15px;
             border-bottom-right-radius: 15px;
             border-top-right-radius: 15px;
-            -webkit-transition: background-color 1000ms linear;
-            -moz-transition: background-color 1000ms linear;
-            -o-transition: background-color 1000ms linear;
-            -ms-transition: background-color 1000ms linear;
-            transition: background-color 1000ms linear;
-            transform:scaleX(0);
-
-
-                
         }
 
 
    }
     &--bouton{
         text-align:center;
-        
     }
    
 }
 
-.menu-entier--coche div:nth-child(2) i{
+.menu-entier--coche i{
     transform:rotate(0deg);
-    transition:all 2000ms;
+    transition:all 1000ms;
 
 }
 
-.menu-entier--bloc:hover div:nth-child(2) i{
-    transform:rotate(110deg);
+.menu-entier--bloc:hover i,
+.menu-entier--bloc:active i{
+    transform: rotate(360deg);
+}
+
+.menu-entier--coche div:nth-child(2){
+    transform:scaleX(0);
+    transform-origin: right;
+    transition:all 900ms;
+}
+.menu-entier--bloc:hover .menu-entier--coche div:nth-child(2),
+.menu-entier--bloc:active .menu-entier--coche div:nth-child(2){
+    transform: scaleX(1);
 }
