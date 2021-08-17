@@ -113,6 +113,7 @@
    }
    &--texte{
     width:80%;
+    transition:all 2000ms;
         div:nth-child(1),
         div:nth-child(2){
             text-overflow: ellipsis;

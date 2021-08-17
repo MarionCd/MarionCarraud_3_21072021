@@ -536,6 +536,8 @@ header img {
 
 .menu-entier--texte {
   width: 80%;
+  -webkit-transition: all 2000ms;
+  transition: all 2000ms;
 }
 
 .menu-entier--texte div:nth-child(1),
