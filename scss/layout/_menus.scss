@@ -80,6 +80,7 @@
     &__liste{
         position:relative;
         margin-top:-12px;
+        margin-bottom:50px;
     }
   
    &--bloc{
@@ -100,12 +101,13 @@
         }
         &:hover .menu-entier--coche,
         &:active .menu-entier--coche{
-            width:30%;
+            width:25%;
                 div:nth-child(2){
                     display:inline-block;
                     transform:scaleX(1);
                     background-color:$tertiary-color;
-                    
+
+    
 
                 }
         }
@@ -142,7 +144,8 @@
     bottom:0;
 
         .prix{
-            padding-top:22px;
+            padding-top:35px;
+            margin-right:10px;
         }
 
         div:nth-child(2){
@@ -159,6 +162,9 @@
             -ms-transition: background-color 1000ms linear;
             transition: background-color 1000ms linear;
             transform:scaleX(0);
+
+
+                
         }
 
 
@@ -170,3 +176,12 @@
    
 }
 
+.menu-entier--coche div:nth-child(2) i{
+    transform:rotate(0deg);
+    transition:all 2000ms;
+
+}
+
+.menu-entier--bloc:hover div:nth-child(2) i{
+    transform:rotate(110deg);
+}
