@@ -108,6 +108,9 @@
         &:active .menu-entier--coche div:nth-child(2){
             transform: scaleX(1);
         }
+        &:hover .menu-entier--texte{
+            width:70%;
+        }
      
    }
    &--texte{

@@ -533,6 +533,10 @@ header img {
           transform: scaleX(1);
 }
 
+.menu-entier--bloc:hover .menu-entier--texte {
+  width: 70%;
+}
+
 .menu-entier--texte {
   width: 80%;
 }
