@@ -516,6 +516,23 @@ header img {
   border-radius: 15px;
 }
 
+.menu-entier--bloc:hover .prix {
+  right: 100%;
+  margin-right: 10px;
+}
+
+.menu-entier--bloc:hover i,
+.menu-entier--bloc:active i {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.menu-entier--bloc:hover .menu-entier--coche div:nth-child(2),
+.menu-entier--bloc:active .menu-entier--coche div:nth-child(2) {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
 .menu-entier--texte {
   width: 80%;
 }
@@ -548,14 +565,17 @@ header img {
           flex-direction: row;
   position: absolute;
   text-align: center;
-  right: 0;
+  right: 0px;
   top: 0;
   bottom: 0;
 }
 
 .menu-entier--coche .prix {
   padding-top: 35px;
-  margin-right: 10px;
+  position: absolute;
+  right: 15px;
+  -webkit-transition: all 900ms;
+  transition: all 900ms;
 }
 
 .menu-entier--coche div:nth-child(2) {
@@ -567,10 +587,12 @@ header img {
   padding-top: 15px;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
-}
-
-.menu-entier--bouton {
-  text-align: center;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: all 900ms;
+  transition: all 900ms;
 }
 
 .menu-entier--coche i {
@@ -580,25 +602,8 @@ header img {
   transition: all 1000ms;
 }
 
-.menu-entier--bloc:hover i,
-.menu-entier--bloc:active i {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-}
-
-.menu-entier--coche div:nth-child(2) {
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: right;
-          transform-origin: right;
-  -webkit-transition: all 900ms;
-  transition: all 900ms;
-}
-
-.menu-entier--bloc:hover .menu-entier--coche div:nth-child(2),
-.menu-entier--bloc:active .menu-entier--coche div:nth-child(2) {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+.menu-entier--bouton {
+  text-align: center;
 }
 
 footer {

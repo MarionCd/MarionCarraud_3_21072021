@@ -95,6 +95,19 @@
     background-color:#fff;
     cursor: pointer;
     border-radius:15px;
+    
+        &:hover .prix{
+            right:100%;
+            margin-right:10px;
+        }
+        &:hover i,
+        &:active i{
+            transform: rotate(360deg);
+        }
+        &:hover .menu-entier--coche div:nth-child(2),
+        &:active .menu-entier--coche div:nth-child(2){
+            transform: scaleX(1);
+        }
      
    }
    &--texte{
@@ -121,14 +134,18 @@
     flex-direction:row;
     position:absolute;
     text-align:center;
-    right:0;
+    right:0px;
     top:0;
     bottom:0;
+    
 
         .prix{
             padding-top:35px;
-            margin-right:10px;
+            position:absolute;
+            right:15px;
+            transition: all 900ms;
         }
+       
 
         div:nth-child(2){
             display:inline-block;
@@ -139,7 +156,16 @@
             padding-top:15px;
             border-bottom-right-radius: 15px;
             border-top-right-radius: 15px;
+            transform:scaleX(0);
+            transform-origin: right;
+            transition:all 900ms;
         }
+        i{
+            transform:rotate(0deg);
+            transition:all 1000ms;
+            
+        }
+       
 
 
    }
@@ -147,25 +173,4 @@
         text-align:center;
     }
    
-}
-
-.menu-entier--coche i{
-    transform:rotate(0deg);
-    transition:all 1000ms;
-
-}
-
-.menu-entier--bloc:hover i,
-.menu-entier--bloc:active i{
-    transform: rotate(360deg);
-}
-
-.menu-entier--coche div:nth-child(2){
-    transform:scaleX(0);
-    transform-origin: right;
-    transition:all 900ms;
-}
-.menu-entier--bloc:hover .menu-entier--coche div:nth-child(2),
-.menu-entier--bloc:active .menu-entier--coche div:nth-child(2){
-    transform: scaleX(1);
 }
