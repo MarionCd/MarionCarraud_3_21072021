@@ -1,8 +1,5 @@
+
 .restaurants{
-    background-color: $background-block;
-    padding:15px 10px;
-    @include plein-ecran;
-   
     &__titre{
         @include sstitre;
         margin-left:20px;

@@ -220,6 +220,7 @@ header img {
 
 #restaurants {
   background-color: #F6F6F6;
+  margin-bottom: 0px;
 }
 
 .fonctionnement__plan {
@@ -277,13 +278,6 @@ header img {
   color: #fff;
   font-weight: 400;
   font-size: 16px;
-}
-
-.restaurants {
-  background-color: #F6F6F6;
-  padding: 15px 10px;
-  margin-right: -8px;
-  margin-left: -8px;
 }
 
 .restaurants__titre {
@@ -534,7 +528,7 @@ header img {
 }
 
 .menu-entier--bloc:hover .menu-entier--texte {
-  width: 70%;
+  width: 60%;
 }
 
 .menu-entier--texte {
