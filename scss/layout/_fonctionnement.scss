@@ -5,6 +5,8 @@
 #restaurants{
     background-color:$background-block ;
     margin-bottom:0px;
+    z-index:1;
+    position:relative;
 }
 .fonctionnement{
     &__plan{
@@ -52,4 +54,44 @@
         font-weight: 400;
         font-size:16px;
     }
+}
+
+.explications{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    justify-content:space-around;
+    margin-top:20px;
+    padding-bottom:20px;
+    .localisation__description{
+        background-color:#fff;
+        border-radius:50px;
+        padding:25px;
+    }
+    .localisation--titre{
+        padding-top:0;
+    }
+    button{
+        margin-bottom:0 ;
+    }
+    #fonctionnement{
+        width:30%;
+        background-color:#fff;
+        padding:0px;
+        border-radius:50px;
+        margin:0px;
+        .fonctionnement__plan .fonctionnement__liste{
+            padding:13px;
+            margin-right:80px;
+            margin-left:80px;
+            .fonctionnement--numero{
+                left:70px;
+            }
+
+        }
+    }
+
+}
+#desktop{
+    margin-bottom:25px;
 }

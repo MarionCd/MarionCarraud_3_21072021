@@ -18,117 +18,169 @@
         <header> 
             <img src="Maquettes Ohmyfood\images\logo\ohmyfood@2x.svg" alt="Oh my food"></img>
         </header>
-        <section class="localisation">
-            <div class="localisation__recherche">
-                <div><i class="fas fa-map-marker-alt"></i></div>
-                <div>Paris, Belleville</div>
-            </div>
-            <div class="localisation__description">
-                <div class="localisation--titre">Réservez le menu qui<br/> vous convient</div>
-                <div class="localisation--argument">Découvrez des restaurants d'exception,<br/> sélectionnés par nos soins.</div>
-                <a href="#restaurants"><button class="localisation--explorer">Explorer nos restaurants</button></a>
+        <div id="mobile">
+            <section class="localisation">
+                <div class="localisation__recherche">
+                    <div><i class="fas fa-map-marker-alt"></i></div>
+                    <div>Paris, Belleville</div>
+                </div>
+                <div class="localisation__description">
+                    <div class="localisation--titre">Réservez le menu qui<br/> vous convient</div>
+                    <div class="localisation--argument">Découvrez des restaurants d'exception,<br/> sélectionnés par nos soins.</div>
+                    <a href="#restaurants"><button class="localisation--explorer">Explorer nos restaurants</button></a>
+                </div>
+            </section>
+            
+            <section id="fonctionnement">
+                <div class="titre-section">Fonctionnement</div>
+                <div class="fonctionnement__plan">
+                    
+                    <div class="fonctionnement__liste">
+                        <div class="fonctionnement--numero">1</div>
+                        <div><i class="fas fa-mobile-alt"></i></div>
+                        <div>Choisissez un restaurant</div>
+                    </div>
+                
+                    <div class="fonctionnement__liste">
+                        <div class="fonctionnement--numero">2</div>
+                        <div><i class="fas fa-list-ul"></i></div>
+                        <div>Composez votre menu</div>
+                    </div>
+                    
+                    <div class="fonctionnement__liste">
+                        <div class="fonctionnement--numero">3</div>
+                        <div><i class="fas fa-store"></i></div>
+                        <div>Dégustez au restaurant</div>
+                    </div>
+                
+                </div>
+            </section>
+        </div>
 
-            </div>
-        </section>
-        <section id="fonctionnement">
-            <div class="titre-section">Fonctionnement</div>
-            <div class="fonctionnement__plan">
-                <div class="fonctionnement__liste">
-                    <div class="fonctionnement--numero">1</div>
-                    <div><i class="fas fa-mobile-alt"></i></div>
-                    <div>Choisissez un restaurant</div>
+        <div id="desktop">
+            <section class="localisation">
+                <div class="localisation__recherche">
+                    <div><i class="fas fa-map-marker-alt"></i></div>
+                    <div>Paris, Belleville</div>
                 </div>
-                <div class="fonctionnement__liste">
-                    <div class="fonctionnement--numero">2</div>
-                    <div><i class="fas fa-list-ul"></i></div>
-                    <div>Composez votre menu</div>
+                <div class="explications">
+                    <div class="localisation__description">
+                        <div class="localisation--titre">Réservez le menu qui<br/> vous convient</div>
+                        <div class="localisation--argument">Découvrez des restaurants d'exception,<br/> sélectionnés par nos soins.</div>
+                        <a href="#restaurants"><button class="localisation--explorer">Explorer nos restaurants</button></a>
+                    </div>
+                    <div id="fonctionnement">
+                        <div class="titre-section">Fonctionnement</div>
+                        <div class="fonctionnement__plan">
+                        
+                            <div class="fonctionnement__liste">
+                                <div class="fonctionnement--numero">1</div>
+                                <div><i class="fas fa-mobile-alt"></i></div>
+                                <div>Choisissez un restaurant</div>
+                            </div>
+                    
+                            <div class="fonctionnement__liste">
+                                <div class="fonctionnement--numero">2</div>
+                                <div><i class="fas fa-list-ul"></i></div>
+                                <div>Composez votre menu</div>
+                            </div>
+                        
+                            <div class="fonctionnement__liste">
+                                <div class="fonctionnement--numero">3</div>
+                                <div><i class="fas fa-store"></i></div>
+                                <div>Dégustez au restaurant</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="fonctionnement__liste">
-                    <div class="fonctionnement--numero">3</div>
-                    <div><i class="fas fa-store"></i></div>
-                    <div>Dégustez au restaurant</div>
-                </div>
-            </div>
 
-        </section>
+            </section>
+            
+           
+        </div>
+
+
 
         <section id="restaurants">
             <div class="titre-section">Restaurants</div>
-            <div class="restaurants__carte">
-                <a href="./menu-palette.html">
-                    <div class="restaurants--vignette restaurants--image1">
-                        <span class="restaurants--nouveau">Nouveau</span>
-                    </div>
-                </a>
-          
-                <div class="restaurants--legende">
-                    <div class="restaurants--texte"><a href="./menu-palette.html">
-                        <div>La palette du goût</div>
-                        <div>Ménilmontant</div>
-                    </a></div>
-                    <div class="like">
-                        <i class="far fa-heart"></i>
-                        <i class="far fa-heart"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="restaurants__carte">
-                <a href="./menu-enchante.html">
-                    <div class="restaurants--vignette restaurants--image2">
-                        <span class="restaurants--nouveau">Nouveau</span>
-                    </div>
-                </a>
-          
-                <div class="restaurants--legende">
-                    <div class="restaurants--texte"><a href="./menu-enchante.html">
-                        <div>La note enchantée</div>
-                        <div>Charonne</div>
-                    </a></div>
-                    <div class="like">
-                        <i class="far fa-heart"></i>
-                        <i class="far fa-heart"></i>
-                    </div>
-                </div>
-            </div>
             
-            <div class="restaurants__carte">
-                <a href="./menu-francaise.html">
-                    <div class="restaurants--vignette restaurants--image3">
-                    </div>
-                </a>
+            <div class="liste-restaurants-carte">
+                
+                <div class="restaurants__carte">
+                    <a href="./menu-palette.html">
+                        <div class="restaurants--vignette restaurants--image1">
+                            <span class="restaurants--nouveau">Nouveau</span>
+                        </div>
+                    </a>
           
-                <div class="restaurants--legende">
-                    <div class="restaurants--texte"><a href="./menu-francaise.html">
-                        <div>À la française</div>
-                        <div>Cité Rouge</div>
-                    </a></div>
-                    <div class="like">
-                        <i class="far fa-heart"></i>
-                        <i class="far fa-heart"></i>
+                    <div class="restaurants--legende">
+                        <div class="restaurants--texte"><a href="./menu-palette.html">
+                            <div>La palette du goût</div>
+                            <div>Ménilmontant</div>
+                        </a></div>
+                        <div class="like">
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-heart"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="restaurants__carte">
-                <a href="./menu-delice.html">
-                    <div class="restaurants--vignette restaurants--image1">
-                    </div>
-                </a>
+                <div class="restaurants__carte">
+                    <a href="./menu-enchante.html">
+                        <div class="restaurants--vignette restaurants--image2">
+                            <span class="restaurants--nouveau">Nouveau</span>
+                        </div>
+                    </a>
           
-                <div class="restaurants--legende">
-                    <div class="restaurants--texte"><a href="./menu-delice.html">
-                        <div>Le délice des sens</div>
-                        <div>Folie-Méricourt</div>
-                    </a></div>
-                    <div class="like">
-                        <i class="far fa-heart"></i>
-                        <i class="far fa-heart"></i>
+                    <div class="restaurants--legende">
+                        <div class="restaurants--texte"><a href="./menu-enchante.html">
+                            <div>La note enchantée</div>
+                            <div>Charonne</div>
+                        </a></div>
+                        <div class="like">
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-heart"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
+            
+                <div class="restaurants__carte">
+                    <a href="./menu-francaise.html">
+                        <div class="restaurants--vignette restaurants--image3">
+                        </div>
+                    </a>
+          
+                    <div class="restaurants--legende">
+                        <div class="restaurants--texte"><a href="./menu-francaise.html">
+                            <div>À la française</div>
+                            <div>Cité Rouge</div>
+                        </a></div>
+                        <div class="like">
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
 
-           
+                <div class="restaurants__carte">
+                    <a href="./menu-delice.html">
+                        <div class="restaurants--vignette restaurants--image1">
+                        </div>
+                    </a>
+          
+                    <div class="restaurants--legende">
+                        <div class="restaurants--texte"><a href="./menu-delice.html">
+                            <div>Le délice des sens</div>
+                            <div>Folie-Méricourt</div>
+                        </a></div>
+                        <div class="like">
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </section>
 
         <footer>

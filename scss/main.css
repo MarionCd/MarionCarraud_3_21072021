@@ -302,6 +302,8 @@ header img {
 #restaurants {
   background-color: #F6F6F6;
   margin-bottom: 0px;
+  z-index: 1;
+  position: relative;
 }
 
 .fonctionnement__plan {
@@ -359,6 +361,57 @@ header img {
   color: #fff;
   font-weight: 400;
   font-size: 16px;
+}
+
+.explications {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.explications .localisation__description {
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 25px;
+}
+
+.explications .localisation--titre {
+  padding-top: 0;
+}
+
+.explications button {
+  margin-bottom: 0;
+}
+
+.explications #fonctionnement {
+  width: 30%;
+  background-color: #fff;
+  padding: 0px;
+  border-radius: 50px;
+  margin: 0px;
+}
+
+.explications #fonctionnement .fonctionnement__plan .fonctionnement__liste {
+  padding: 13px;
+  margin-right: 80px;
+  margin-left: 80px;
+}
+
+.explications #fonctionnement .fonctionnement__plan .fonctionnement__liste .fonctionnement--numero {
+  left: 70px;
+}
+
+#desktop {
+  margin-bottom: 25px;
 }
 
 .restaurants__titre {
@@ -811,6 +864,75 @@ footer a {
 @media all and (min-width: 800px) {
   .localisation__recherche div:nth-child(1) {
     width: 40.9%;
+  }
+}
+
+@media all and (max-width: 819px) {
+  #desktop {
+    display: none;
+  }
+}
+
+@media all and (min-width: 820px) {
+  #mobile {
+    display: none;
+  }
+  .restaurants__carte {
+    width: 40%;
+  }
+  .restaurants__carte .restaurants--vignette {
+    height: 285px;
+  }
+  .liste-restaurants-carte {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #preload .spin {
+    margin-left: 50%;
+  }
+  .banniere-menu__image1,
+  .banniere-menu__image2,
+  .banniere-menu__image3,
+  .banniere-menu__image4 {
+    height: 385px;
+  }
+  footer ul li {
+    float: left;
+    margin-right: 80px;
+  }
+  footer {
+    height: 150px;
+  }
+  .like {
+    text-align: center;
+  }
+  .menu-entier__titre h1 {
+    margin-left: 30px;
+  }
+  .menu-entier__complet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .menu-entier__complet .entrees,
+  .menu-entier__complet .plats,
+  .menu-entier__complet .desserts {
+    width: 30%;
   }
 }
 /*# sourceMappingURL=main.css.map */

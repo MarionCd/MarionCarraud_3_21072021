@@ -12,8 +12,69 @@
         width:35.9%;
     }
 }
+
+
+
 @media all and(min-width:800px){
     .localisation__recherche div:nth-child(1){
         width:40.9%;
     }
 }
+
+@media all and (max-width : 819px){
+    #desktop{
+        display:none;
+    }
+}
+
+@media all and (min-width:820px){
+    #mobile{
+        display:none;
+    }
+    .restaurants__carte{
+        width:40%;
+        .restaurants--vignette{
+            height:285px;
+        }
+    }
+    .liste-restaurants-carte{
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content:space-around;
+    }
+    #preload .spin{
+        margin-left:50%;
+    }
+
+    .banniere-menu__image1,
+    .banniere-menu__image2,
+    .banniere-menu__image3,
+    .banniere-menu__image4{
+        height:385px;
+    }
+    footer ul li{
+        float:left;
+        margin-right:80px;
+    }
+    footer{
+        height:150px;
+    }
+    .like{
+        text-align:center;
+    }
+    .menu-entier__titre h1{
+        margin-left:30px;
+    }
+    .menu-entier__complet{
+        display:flex;
+        flex-direction:row;
+        justify-content: space-around;
+        .entrees,
+        .plats,
+        .desserts{
+            width:30%;
+        }
+    }
+}
+
