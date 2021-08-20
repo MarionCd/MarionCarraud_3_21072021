@@ -89,6 +89,9 @@
         position:relative;
         margin-top:-12px;
         margin-bottom:50px;
+        
+        
+       
     }
   
    &--bloc{
@@ -103,6 +106,29 @@
     background-color:#fff;
     cursor: pointer;
     border-radius:15px;
+    opacity:0;
+    animation-name: apparition-menu;
+    animation-duration: 1200ms;
+    animation-fill-mode: forwards;
+    -webkit-animation-name: apparition-menu;
+    -webkit-animation-duration: 1200ms;
+    -webkit-animation-fill-mode: forwards;
+        &:nth-child(1){
+            animation-delay: 500ms;
+            -webkit-animation-delay: 500ms;
+        }
+        &:nth-child(2){
+            animation-delay: 600ms;
+            -webkit-animation-delay: 600ms;
+        }
+        &:nth-child(3){
+            animation-delay: 700ms;
+            -webkit-animation-delay: 700ms;
+        }
+        &:nth-child(4){
+            animation-delay: 800ms;
+            -webkit-animation-delay: 800ms;
+        }
     
         &:hover .prix,
         &:active .prix{
@@ -188,3 +214,13 @@
    
 }
 
+
+@keyframes apparition-menu {
+    0% { opacity: 0 }
+    100% { opacity: 1 }
+}
+
+@-webkit-keyframes apparition-menu {
+    0% { opacity: 0 }
+    100% { opacity: 1 }
+}
