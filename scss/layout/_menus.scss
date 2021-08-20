@@ -1,12 +1,13 @@
 .retour-menu{
-    position:relative;
-    height:37px;
+    display:flex;
+    flex-direction: row;
+    height:40px;
+    align-items: center;
+    justify-content:center;
     a{
         position:absolute;
         font-size:18px;
-        @include plein-ecran;
-        top:50%;
-        left:20px;
+        left:30px;
     }
 
     &__logo{
@@ -14,27 +15,25 @@
         background-size:contain;
         background-position: center center;
         background-repeat: no-repeat;
-        width:45%;
-        position:absolute;
-        top: 50%;
+        width:45%; 
         height:100%;
-        left:27%;
     }
 }
 
 .banniere-menu{
-    height:232px;
     @include plein-ecran;
+    margin-bottom:-50px;
     &__image1, &__image2, &__image3, &__image4{
         background-repeat: no-repeat;
         background-position: center center;
-        height:290px;
+        height:250px;
     }
     &__image1, &__image3, &__image4{
         background-size:contain;
     }
     &__image1{
         background-image: url('../Maquettes\ Ohmyfood/images/restaurants/la-palette-du-gout.jpg');
+        height:250px;
     }
     &__image2{
         background-image: url('../Maquettes\ Ohmyfood/images/restaurants/la-note-enchantee.jpg');
@@ -50,20 +49,29 @@
 }
 
 .menu-entier{
-    @include bord-haut-rond;
     @include plein-ecran;
-    padding-right:20px;
-    padding-left:20px;
+    background-color:$background-block;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding:15px 20px;
     &__titre{
         display:flex;
-        justify-content: space-around;
+        height:75px;
+        align-items: center;
+        .like{
+            width:20%;
+            height:100%;
+        }
         i{
             font-size:28px;
-            margin-top:22px;
+            top:33%;
+            right:0;
         }
         h1{
             font-size:26px;
             color:#000;
+            
+            width:80%;
         }
     }
     &__sstitre{
@@ -96,7 +104,8 @@
     cursor: pointer;
     border-radius:15px;
     
-        &:hover .prix{
+        &:hover .prix,
+        &:active .prix{
             right:100%;
             margin-right:10px;
         }
@@ -108,7 +117,8 @@
         &:active .menu-entier--coche div:nth-child(2){
             transform: scaleX(1);
         }
-        &:hover .menu-entier--texte{
+        &:hover .menu-entier--texte,
+        &:active .menu-entier--texte{
             width:60%;
         }
      

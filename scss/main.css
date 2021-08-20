@@ -385,17 +385,26 @@ header img {
 }
 
 .retour-menu {
-  position: relative;
-  height: 37px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .retour-menu a {
   position: absolute;
   font-size: 18px;
-  margin-right: -8px;
-  margin-left: -8px;
-  top: 50%;
-  left: 20px;
+  left: 30px;
 }
 
 .retour-menu__logo {
@@ -404,22 +413,19 @@ header img {
   background-position: center center;
   background-repeat: no-repeat;
   width: 45%;
-  position: absolute;
-  top: 50%;
   height: 100%;
-  left: 27%;
 }
 
 .banniere-menu {
-  height: 232px;
   margin-right: -8px;
   margin-left: -8px;
+  margin-bottom: -50px;
 }
 
 .banniere-menu__image1, .banniere-menu__image2, .banniere-menu__image3, .banniere-menu__image4 {
   background-repeat: no-repeat;
   background-position: center center;
-  height: 290px;
+  height: 250px;
 }
 
 .banniere-menu__image1, .banniere-menu__image3, .banniere-menu__image4 {
@@ -428,6 +434,7 @@ header img {
 
 .banniere-menu__image1 {
   background-image: url("../Maquettes Ohmyfood/images/restaurants/la-palette-du-gout.jpg");
+  height: 250px;
 }
 
 .banniere-menu__image2 {
@@ -444,30 +451,39 @@ header img {
 }
 
 .menu-entier {
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
   margin-right: -8px;
   margin-left: -8px;
-  padding-right: 20px;
-  padding-left: 20px;
+  background-color: #F6F6F6;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  padding: 15px 20px;
 }
 
 .menu-entier__titre {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  height: 75px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-entier__titre .like {
+  width: 20%;
+  height: 100%;
 }
 
 .menu-entier__titre i {
   font-size: 28px;
-  margin-top: 22px;
+  top: 33%;
+  right: 0;
 }
 
 .menu-entier__titre h1 {
   font-size: 26px;
   color: #000;
+  width: 80%;
 }
 
 .menu-entier__sstitre {
@@ -510,7 +526,8 @@ header img {
   border-radius: 15px;
 }
 
-.menu-entier--bloc:hover .prix {
+.menu-entier--bloc:hover .prix,
+.menu-entier--bloc:active .prix {
   right: 100%;
   margin-right: 10px;
 }
@@ -527,7 +544,8 @@ header img {
           transform: scaleX(1);
 }
 
-.menu-entier--bloc:hover .menu-entier--texte {
+.menu-entier--bloc:hover .menu-entier--texte,
+.menu-entier--bloc:active .menu-entier--texte {
   width: 60%;
 }
 
