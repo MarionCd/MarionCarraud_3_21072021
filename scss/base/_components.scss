@@ -1,5 +1,5 @@
 button{
-    @include bouton-rose($secondary-color, $primary-color, $color-hover1, $color-hover2, 2000ms);
+    @include bouton-rose($secondary-color, $primary-color, $color-hover1, $color-hover2, 1000ms);
 }
 
 .like{
@@ -37,10 +37,10 @@ button{
 
 .like:hover i:nth-child(1){
     animation-name: coeur-plein;
-    animation-duration: 3s;
+    animation-duration: 1200ms;
     animation-fill-mode: forwards;
     -webkit-animation-name: coeur-plein;
-    -webkit-animation-duration: 3s;
+    -webkit-animation-duration: 1200ms;
     -webkit-animation-fill-mode: forwards;
 }
 
@@ -56,10 +56,10 @@ button{
   
   .like:hover i:nth-child(2){
       animation-name: coeur-vide;
-      animation-duration: 3s;
+      animation-duration: 1200ms;
       animation-fill-mode: forwards;
       -webkit-animation-name: coeur-vide;
-      -webkit-animation-duration: 3s;
+      -webkit-animation-duration: 1200ms;
       -webkit-animation-fill-mode: forwards;
   }
  

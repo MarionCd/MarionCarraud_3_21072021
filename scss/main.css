@@ -27,8 +27,8 @@ button:before {
   opacity: 0;
   width: 100%;
   z-index: -100;
-  -webkit-transition: all 2000ms;
-  transition: all 2000ms;
+  -webkit-transition: all 1000ms;
+  transition: all 1000ms;
   border-radius: 25px;
 }
 
@@ -84,10 +84,10 @@ button:hover:before {
 
 .like:hover i:nth-child(1) {
   animation-name: coeur-plein;
-  animation-duration: 3s;
+  animation-duration: 1200ms;
   animation-fill-mode: forwards;
   -webkit-animation-name: coeur-plein;
-  -webkit-animation-duration: 3s;
+  -webkit-animation-duration: 1200ms;
   -webkit-animation-fill-mode: forwards;
 }
 
@@ -111,10 +111,10 @@ button:hover:before {
 
 .like:hover i:nth-child(2) {
   animation-name: coeur-vide;
-  animation-duration: 3s;
+  animation-duration: 1200ms;
   animation-fill-mode: forwards;
   -webkit-animation-name: coeur-vide;
-  -webkit-animation-duration: 3s;
+  -webkit-animation-duration: 1200ms;
   -webkit-animation-fill-mode: forwards;
 }
 
@@ -252,14 +252,14 @@ header img {
 
 .fonctionnement__liste:hover {
   background-color: #f2eafb;
-  -webkit-transition-duration: 1000ms;
-          transition-duration: 1000ms;
+  -webkit-transition-duration: 800ms;
+          transition-duration: 800ms;
 }
 
 .fonctionnement__liste:hover i {
   color: #9356DC;
-  -webkit-transition-duration: 1000ms;
-          transition-duration: 1000ms;
+  -webkit-transition-duration: 800ms;
+          transition-duration: 800ms;
 }
 
 .fonctionnement__liste i {
@@ -401,7 +401,7 @@ header img {
           justify-content: center;
 }
 
-.retour-menu a {
+.retour-menu a:nth-child(1) {
   position: absolute;
   font-size: 18px;
   left: 30px;

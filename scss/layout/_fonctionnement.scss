@@ -26,11 +26,11 @@
 
         &:hover{
             background-color:lighten($color: $primary-color, $amount: 35%);
-            transition-duration: 1000ms;
+            transition-duration: 800ms;
         
             i{
                 color:$primary-color;
-                transition-duration: 1000ms;
+                transition-duration: 800ms;
 
             }
         }
