@@ -7,3 +7,13 @@
     }
  
 }
+@media all and (min-width:600px){
+    .localisation__recherche div:nth-child(1){
+        width:35.9%;
+    }
+}
+@media all and(min-width:800px){
+    .localisation__recherche div:nth-child(1){
+        width:40.9%;
+    }
+}
