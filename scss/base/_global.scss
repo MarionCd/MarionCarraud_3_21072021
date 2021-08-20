@@ -17,3 +17,78 @@ a{
 section .titre-section{
     @include sstitre;   
 }
+
+#preload{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-image:linear-gradient(to left top, $primary-color,$secondary-color);
+    margin:-25px -8px;
+    opacity:0;
+    animation-name: chargement;
+    animation-duration: 1800ms;
+    -webkit-animation-name: chargement;
+    -webkit-animation-duration: 1800ms;
+    z-index:0;
+    .spin{
+        color:#fff;   
+        margin-left:42%;
+        margin-top:175px;
+        font-size:50px;
+            i{
+                animation-name:spinner;
+                animation-duration:1800ms;
+                -webkit-animation-name:spinner;
+                -webkit-animation-duration:1800ms;
+        }
+    }
+    
+
+}
+
+@keyframes chargement {
+    0% { 
+        opacity: 0.9;
+        z-index:1000;
+    }
+    50% { 
+        opacity: 0.9;
+        z-index:1000;
+    }
+    100% { 
+        opacity: 0;
+        z-index:1000;
+    }
+}
+
+@-webkit-keyframes chargement {
+    0% { 
+        opacity: 0.9;
+        z-index:1000;
+    }
+    50% { 
+        opacity: 0.9;
+        z-index:1000;
+    }
+    100% { 
+        opacity: 0;
+        z-index:1000;
+    }
+}
+
+@keyframes spinner {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(190deg);
+    }
+}
+@-webkit-keyframes spinner{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(190deg);
+    }
+}
