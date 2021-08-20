@@ -1,7 +1,4 @@
-#restaurants{
-    z-index:1;
-    position:relative;
-}
+
 .restaurants{
     &__titre{
         @include sstitre;
