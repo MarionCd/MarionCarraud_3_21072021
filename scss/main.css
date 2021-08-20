@@ -797,4 +797,17 @@ footer ul li:nth-child(2):before {
 footer a {
   color: #fff;
 }
+
+@media all and (max-width: 320px) {
+  .menu-entier__titre h1 {
+    font-size: 22px;
+  }
+  .banniere-menu__image1,
+  .banniere-menu__image3 {
+    height: 213px;
+  }
+  .banniere-menu__image4 {
+    height: 218px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
