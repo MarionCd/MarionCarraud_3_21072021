@@ -800,7 +800,7 @@ footer a {
 
 @media all and (max-width: 320px) {
   .menu-entier__titre h1 {
-    font-size: 22px;
+    font-size: 20px;
   }
   .banniere-menu__image1,
   .banniere-menu__image3 {
@@ -808,6 +808,9 @@ footer a {
   }
   .banniere-menu__image4 {
     height: 218px;
+  }
+  .fonctionnement__liste {
+    font-size: 15px;
   }
 }
 /*# sourceMappingURL=main.css.map */
