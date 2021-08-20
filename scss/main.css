@@ -793,7 +793,7 @@ footer a {
   color: #fff;
 }
 
-@media all and (max-width: 320px) {
+@media all and (max-width: 380px) {
   .menu-entier__titre h1 {
     font-size: 20px;
   }
