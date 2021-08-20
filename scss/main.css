@@ -512,20 +512,15 @@ header img {
   background-repeat: no-repeat;
   background-position: center center;
   height: 250px;
-}
-
-.banniere-menu__image1, .banniere-menu__image3, .banniere-menu__image4 {
-  background-size: contain;
+  background-size: cover;
 }
 
 .banniere-menu__image1 {
   background-image: url("../Maquettes Ohmyfood/images/restaurants/la-palette-du-gout.jpg");
-  height: 250px;
 }
 
 .banniere-menu__image2 {
   background-image: url("../Maquettes Ohmyfood/images/restaurants/la-note-enchantee.jpg");
-  background-size: cover;
 }
 
 .banniere-menu__image3 {
@@ -798,16 +793,9 @@ footer a {
   color: #fff;
 }
 
-@media all and (max-width: 380px) {
+@media all and (max-width: 320px) {
   .menu-entier__titre h1 {
     font-size: 20px;
-  }
-  .banniere-menu__image1,
-  .banniere-menu__image3 {
-    height: 213px;
-  }
-  .banniere-menu__image4 {
-    height: 218px;
   }
   .fonctionnement__liste {
     font-size: 15px;
