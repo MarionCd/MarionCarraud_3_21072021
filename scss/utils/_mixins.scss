@@ -41,8 +41,7 @@
     cursor: pointer;
     border-radius:25px;
     box-shadow: $shadow-button;
-    width:130px;
-    margin-left:42%;
+    
     &:before {
         background-image: linear-gradient(to bottom right,$start2, $end2);
         content: "";
