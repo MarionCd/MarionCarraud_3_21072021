@@ -5,12 +5,14 @@
     .fonctionnement__liste{
         font-size:15px;
     }
+    
  
 }
 @media all and (min-width:600px){
     .localisation__recherche div:nth-child(1){
         width:35.9%;
     }
+   
 }
 
 
@@ -19,11 +21,15 @@
     .localisation__recherche div:nth-child(1){
         width:40.9%;
     }
+    
 }
 
 @media all and (max-width : 819px){
     #desktop{
         display:none;
+    }
+    #restaurants .titre-section{
+        margin-left:0px;
     }
 }
 
