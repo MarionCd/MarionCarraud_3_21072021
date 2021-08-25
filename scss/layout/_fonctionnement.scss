@@ -1,4 +1,5 @@
-#fonctionnement,
+#fonctionnement_mobile,
+#fonctionnement_desktop,
 #restaurants{
     @include marge-section;
 }
@@ -75,7 +76,8 @@
     button{
         margin-bottom:0 ;
     }
-    #fonctionnement{
+    #fonctionnement_mobile,
+    #fonctionnement_desktop{
         width:41%;
         background-color:#fff;
         padding:0px;

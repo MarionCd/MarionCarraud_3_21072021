@@ -1,4 +1,4 @@
-button{
+.boutton{
     @include bouton-rose($secondary-color, $primary-color, $color-hover1, $color-hover2, 1000ms);
 }
 
@@ -39,9 +39,6 @@ button{
     animation-name: coeur-plein;
     animation-duration: 1200ms;
     animation-fill-mode: forwards;
-    -webkit-animation-name: coeur-plein;
-    -webkit-animation-duration: 1200ms;
-    -webkit-animation-fill-mode: forwards;
 }
 
   @keyframes coeur-vide {
@@ -58,9 +55,6 @@ button{
       animation-name: coeur-vide;
       animation-duration: 1200ms;
       animation-fill-mode: forwards;
-      -webkit-animation-name: coeur-vide;
-      -webkit-animation-duration: 1200ms;
-      -webkit-animation-fill-mode: forwards;
   }
  
   .like:active i:nth-child(1) {
