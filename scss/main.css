@@ -292,11 +292,6 @@ header img {
   font-family: 'roboto', sans-serif;
 }
 
-.localisation .bouton {
-  width: 180px !important;
-  margin-left: 20% !important;
-}
-
 #fonctionnement_mobile,
 #fonctionnement_desktop,
 #restaurants {
@@ -313,7 +308,7 @@ header img {
 
 #restaurants .bouton {
   width: 180px;
-  margin-left: 15%;
+  margin: auto;
 }
 
 .fonctionnement__plan {
@@ -402,7 +397,6 @@ header img {
 .explications .bouton {
   margin-bottom: 0;
   width: 180px;
-  margin-left: 15%;
 }
 
 .explications #fonctionnement_mobile,
@@ -802,7 +796,7 @@ header img {
   font-size: 16px;
   font-weight: 400;
   width: 130px;
-  margin-left: 42%;
+  margin: auto;
 }
 
 @-webkit-keyframes apparition-menu {
@@ -881,17 +875,11 @@ footer a {
   .localisation__recherche div:nth-child(1) {
     width: 35.9%;
   }
-  .localisation .bouton {
-    margin-left: 32%;
-  }
 }
 
 @media all and (min-width: 800px) {
   .localisation__recherche div:nth-child(1) {
     width: 40.9%;
-  }
-  .localisation .bouton {
-    margin-left: 35%;
   }
 }
 
