@@ -8,10 +8,9 @@
         i{
             @include icone-like; 
                 &:nth-child(1){
-                    background: -webkit-linear-gradient($primary-color, $secondary-color);
+                    background-image: linear-gradient($primary-color, $secondary-color);
                     background-clip:text;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
+                    color: transparent;
                     opacity:0;
                     font-weight:600;
                     
@@ -30,10 +29,7 @@
     0% { opacity: 0 }
     100% { opacity: 1 }
 }
-@-webkit-keyframes coeur-plein {
-  0% { opacity: 0 }
-  100% { opacity: 1 }
-}
+
 
 .like:hover i:nth-child(1){
     animation-name: coeur-plein;
@@ -46,10 +42,7 @@
       100% { opacity: 0 }
   }
 
-  @-webkit-keyframes coeur-vide {
-    0% { opacity: 1 }
-    100% { opacity: 0 }
-  }
+  
   
   .like:hover i:nth-child(2){
       animation-name: coeur-vide;

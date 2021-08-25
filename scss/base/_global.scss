@@ -57,30 +57,9 @@ a{
     }
 }
 
-@-webkit-keyframes chargement {
-    0% { 
-        opacity: 0.9;
-        z-index:1000;
-    }
-    50% { 
-        opacity: 0.9;
-        z-index:1000;
-    }
-    100% { 
-        opacity: 0;
-        z-index:1000;
-    }
-}
+
 
 @keyframes spinner {
-    0%{
-        transform:rotate(0deg);
-    }
-    100%{
-        transform:rotate(190deg);
-    }
-}
-@-webkit-keyframes spinner{
     0%{
         transform:rotate(0deg);
     }
