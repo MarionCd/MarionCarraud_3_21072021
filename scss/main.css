@@ -239,6 +239,7 @@ header img {
   background-color: #F6F6F6;
   margin-top: 12px;
   text-align: center;
+  padding-bottom: 30px;
   margin-right: -8px;
   margin-left: -8px;
 }
@@ -292,9 +293,8 @@ header img {
 }
 
 .localisation .bouton {
-  margin-bottom: 58px;
   width: 180px !important;
-  margin-left: 15% !important;
+  margin-left: 20% !important;
 }
 
 #fonctionnement_mobile,

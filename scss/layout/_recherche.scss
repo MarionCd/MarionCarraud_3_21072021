@@ -3,6 +3,7 @@
     background-color: $background-block;
     margin-top:12px;
     text-align: center;
+    padding-bottom:30px;
     @include plein-ecran;
     &__recherche{
         display: flex;
@@ -38,9 +39,9 @@
     }
 
    .bouton{
-        margin-bottom:58px;
+       
         width: 180px !important;
-        margin-left: 15% !important;
+        margin-left: 20% !important;
     }
     
 }
