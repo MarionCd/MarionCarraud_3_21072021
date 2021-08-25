@@ -395,7 +395,7 @@ header img {
 }
 
 .explications .bouton {
-  margin-bottom: 0;
+  margin: auto;
   width: 180px;
 }
 
