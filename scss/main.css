@@ -293,6 +293,8 @@ header img {
 
 .localisation .bouton {
   margin-bottom: 58px;
+  width: 180px !important;
+  margin-left: 15% !important;
 }
 
 #fonctionnement_mobile,
