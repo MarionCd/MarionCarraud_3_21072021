@@ -399,6 +399,8 @@ header img {
 
 .explications .bouton {
   margin-bottom: 0;
+  width: 180px !important;
+  margin-left: 15% !important;
 }
 
 .explications #fonctionnement_mobile,
