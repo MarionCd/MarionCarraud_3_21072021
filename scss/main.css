@@ -525,6 +525,10 @@ header img {
   font-size: 18px;
 }
 
+#restaurants .titre-section {
+  margin-left: 50px;
+}
+
 .retour-menu {
   display: -webkit-box;
   display: -ms-flexbox;
