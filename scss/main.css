@@ -291,6 +291,8 @@ header img {
   font-weight: 400;
   color: #fff;
   font-family: 'roboto', sans-serif;
+  width: 180px;
+  margin: auto;
 }
 
 #fonctionnement_mobile,
@@ -305,11 +307,6 @@ header img {
   margin-bottom: 0px;
   z-index: 1;
   position: relative;
-}
-
-#restaurants .bouton {
-  width: 180px;
-  margin: auto;
 }
 
 .fonctionnement__plan {
