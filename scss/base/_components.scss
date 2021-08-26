@@ -10,7 +10,8 @@
                 &:nth-child(1){
                     background-image: linear-gradient($primary-color, $secondary-color);
                     background-clip:text;
-                    color: transparent;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
                     opacity:0;
                     font-weight:600;
                     
