@@ -1,4 +1,4 @@
-.bouton {
+button {
   background-size: 100%;
   background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
@@ -15,7 +15,7 @@
           box-shadow: 0px 5px 8px 2px #D5D5D5;
 }
 
-.bouton:before {
+button:before {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#fface8), to(#ae80e5));
   background-image: linear-gradient(to bottom right, #fface8, #ae80e5);
   content: "";
@@ -32,7 +32,7 @@
   border-radius: 25px;
 }
 
-.bouton:hover:before {
+button:hover:before {
   opacity: 1;
   -webkit-box-shadow: 0px 0px 10px 2px #979797;
           box-shadow: 0px 0px 10px 2px #979797;
@@ -133,8 +133,12 @@ body {
   background-color: #fff;
 }
 
-h1, h2, h3, h4 {
+h1 {
   font-family: "shrikhand", sans-serif;
+}
+
+h2, h3, h4 {
+  font-family: roboto, sans-serif;
 }
 
 a {
@@ -291,8 +295,6 @@ header img {
   font-weight: 400;
   color: #fff;
   font-family: 'roboto', sans-serif;
-  width: 180px;
-  margin: auto;
 }
 
 #fonctionnement_mobile,
@@ -390,11 +392,6 @@ header img {
 
 .explications .localisation--titre {
   padding-top: 0;
-}
-
-.explications .bouton {
-  margin: auto;
-  width: 180px;
 }
 
 .explications #fonctionnement_mobile,

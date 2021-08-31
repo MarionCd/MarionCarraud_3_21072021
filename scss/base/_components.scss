@@ -1,4 +1,4 @@
-.bouton{
+button{
     @include bouton-rose($secondary-color, $primary-color, $color-hover1, $color-hover2, 1000ms);
 }
 

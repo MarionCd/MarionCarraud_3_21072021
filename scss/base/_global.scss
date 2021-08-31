@@ -4,9 +4,13 @@ body{
     background-color:$background-color;
 }
 
-h1, h2, h3, h4 {
+h1{
+    font-family: $title-font;
+}
+
+h2, h3, h4 {
     
-    font-family:$title-font;
+    font-family:$font;
 }
 
 a{
