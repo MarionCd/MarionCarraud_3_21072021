@@ -626,6 +626,8 @@ header img {
 
 .menu-entier__sstitre {
   text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 500;
 }
 
 .menu-entier__sstitre:after {
